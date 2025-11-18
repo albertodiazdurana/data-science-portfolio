@@ -1,4 +1,4 @@
-# my_projects
+# data-science-portfolio
 Portfolio of data science and machine learning projects covering demand forecasting, credit risk, customer segmentation, process mining, and regression modeling. Implementations using Python, XGBoost, time series analysis, and NLP techniques for real-world business problems
 ---
 # 📊 Data Science Portfolio
@@ -102,6 +102,8 @@ Energy Systems Modeling | Process Mining (PM4Py) | NLP | Time Series Forecasting
 - MLOps Specialization (DeepLearning.AI, 2024)
 - Project Management Professional - PMP (PMI, 2016)
 - Data Analytics for Six Sigma (University of Amsterdam, 2017)
+
+[View all certifications →](https://github.com/albertodiazdurana/Certificates)
 
 ## 🎓 Education
 
