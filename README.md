@@ -8,13 +8,15 @@ Senior Data Scientist with a decade of international experience deploying produc
 ## 🎯 Featured Projects
 
 ### 📈 Retail & Demand Forecasting
-**[Corporación Favorita Demand Forecasting](https://github.com/albertodiazdurana/CorporacionFavorita-demand-forecasting-in-retail)**  
-Time series forecasting to optimize inventory management for Ecuadorian grocery stores.
-- **Approach**: XGBoost with MLflow experiment tracking, hyperparameter tuning (GridSearchCV/RandomizedSearchCV)
-- **Features**: 29 engineered features (lag, rolling statistics, oil economics, aggregations, promotion interactions)
-- **Validation**: Time-series cross-validation with SHAP analysis, permutation importance, ablation studies
-- **Scale**: 300,896 transactions, 99.1% sparsity, 33.9% weekend sales lift detected
-- **Tech**: XGBoost, MLflow, pandas, Dask, statsmodels
+**[Corporación Favorita Demand Forecasting](https://github.com/albertodiazdurana/Demand-forecasting-in-retail)** | **[Live App](https://demand-forecasting-in-retail-app.streamlit.app/)**  
+End-to-end time series forecasting pipeline for Ecuadorian grocery inventory optimization.
+- **Production Model**: XGBoost achieving RMSE 6.40 (11% improvement over baseline), deployed via Streamlit
+- **Scale**: 4.8M transactions, 10 stores, 2,638 items, 32 product families
+- **Features**: 33 optimized features (lag, rolling statistics, calendar, aggregations) after ablation studies removed 12 harmful features
+- **Key Finding**: Temporal consistency beats data volume—seasonally aligned training (Q4+Q1) outperformed 7x larger dataset by 54%
+- **Experiments**: 16 MLflow runs tracking model evolution; LSTM won on sample (300K), XGBoost won at scale (4.8M)
+- **Quality**: 24 pytest tests, production-hardened codebase
+- **Tech**: XGBoost, TensorFlow/LSTM, MLflow, Streamlit, WSL2 GPU acceleration, pytest
 
 ### 👥 Customer Intelligence
 **[TravelTide Customer Segmentation](https://github.com/albertodiazdurana/TravelTide_Customer_Segmentation)**  
@@ -27,7 +29,7 @@ Behavioral clustering and propensity modeling for personalized rewards program.
 ### 💰 Financial Risk Modeling
 **[Loan Approval Prediction](https://github.com/albertodiazdurana/loan-approval-prediction)**  
 Binary classification for credit risk assessment with model interpretability.
-- **Performance**: 80% test accuracy, ~99% training accuracy with Random Forest
+- **Performance**: 80% test accuracy with Random Forest, 5-fold cross-validation
 - **Features**: SMOTE for class imbalance, GridSearchCV (108 combinations), SHAP analysis
 - **Deliverables**: 100-question interview Q&A guide
 - **Tech**: scikit-learn, SHAP, imbalanced-learn
