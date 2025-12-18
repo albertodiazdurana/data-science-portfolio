@@ -34,8 +34,18 @@ Binary classification for credit risk assessment with model interpretability.
 - **Deliverables**: 100-question interview Q&A guide
 - **Tech**: scikit-learn, SHAP, imbalanced-learn
 
+### 🖼️ Computer Vision & Deep Learning
+**[CIFAR-10 Image Classification](https://github.com/albertodiazdurana/computer_vision)**
+Transfer learning study using ResNet50 for image classification on CIFAR-10 dataset.
+- **Architecture**: ResNet50 backbone with custom classification head, two-phase training strategy
+- **Performance**: 48.9% test accuracy; fine-tuning provided 4.7× improvement over frozen features
+- **Key Insight**: Input size compatibility critical—ResNet50's 224×224 requirement limits 32×32 image classification ceiling
+- **Data Augmentation**: Random flips, rotations, zoom for robust feature learning
+- **Analysis**: Confusion matrix reveals visual similarity drives misclassifications (ship/airplane, deer/horse pairs)
+- **Tech**: TensorFlow 2.20, ResNet50, scikit-learn, Jupyter, GPU acceleration (NVIDIA Quadro)
+
 ### 🏭 Industrial ML & Manufacturing
-**[Cement Strength Prediction](https://github.com/albertodiazdurana/cement-strength-prediction-XGBoost)**  
+**[Cement Strength Prediction](https://github.com/albertodiazdurana/cement-strength-prediction-XGBoost)**
 Regression model predicting 28-day compressive strength from analytical measurements.
 - **Application**: Real-world manufacturing scenario with dynamic raw materials
 - **Methods**: XGBoost with time series cross-validation
