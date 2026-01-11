@@ -52,12 +52,29 @@ Regression model predicting 28-day compressive strength from analytical measurem
 - **Features**: XRD, XRF, PSD data; temporal feature extraction
 - **Tech**: XGBoost, Python 3.12, scikit-learn
 
+### 📝 NLP & Text Analytics
+**[Topic Modeling & Clustering](https://github.com/albertodiazdurana/nlp-topic-modeling)**
+Unsupervised text analysis for case management data, extracting patterns from Jira triage comments.
+- **Methods**: LDA topic modeling (coherence-optimized), hierarchical clustering (Ward), K-means with silhouette analysis
+- **NLP Pipeline**: Tokenization, lemmatization, bigram/trigram detection, stopword removal
+- **Output**: Case-level attributes with cluster assignments, dominant topics, and top terms for process mining
+- **Tech**: NLTK, Gensim, scikit-learn, pandas, matplotlib
+
 ### ⚙️ Business Process Optimization
-**[Process Mining & Sentiment Analysis](https://github.com/albertodiazdurana/process-mining-and-sentiment_analysis)**  
+**[Process Mining & Sentiment Analysis](https://github.com/albertodiazdurana/process-mining-and-sentiment_analysis)**
 End-to-end process mining with NLP sentiment analysis.
 - **Analysis**: Directly-Follows Graph (DFG) with frequency and time metrics
 - **NLP**: Twitter scraping (Twint), EDA, sentiment analysis
 - **Tech**: PM4Py, Python, NLP libraries
+
+### 🔧 Data Engineering & ETL
+**[Log Processor ETL Pipeline](https://github.com/albertodiazdurana/log-processor)**
+ETL pipeline converting BPM operational data into process mining event logs.
+- **Architecture**: REST API extraction → deduplication → timestamp splitting → business logic → join → upload
+- **Input**: 3 normalized BPM tables (ProcInst, ActInst, ASS with 100+ fields)
+- **Features**: Pagination, incremental loads, batch processing, multiple event type handlers
+- **Deployment**: PyInstaller Windows executables with tkinter GUI
+- **Tech**: Python, pandas, requests, Conda
 
 ## ⚡ Domain Expertise: Energy Systems Engineering
 
