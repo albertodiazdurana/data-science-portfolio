@@ -7,6 +7,17 @@ Senior Data Scientist with a decade of international experience deploying produc
 
 ## 🎯 Featured Projects
 
+### 🔥 Energy Systems — Heating Curve Simulator
+**[Residential Energy Systems](https://github.com/albertodiazdurana/DataScience_ResidentialEnergySystems)** | **[Live App](https://data-science-residential-energy-systems-heating-curve.streamlit.app/)**  
+Interactive tool for simulating and analyzing residential heating curves (Heizkennlinie) based on German engineering standards.
+- **Simulation**: Real weather data from 8 German cities via Open-Meteo API
+- **Building Presets**: Heat Pump (slope 0.3) to Historic Altbau (slope 1.6)
+- **Analysis**: Parameter extraction using OLS and RANSAC regression
+- **Noise Models**: Clean → Realistic scenarios for algorithm robustness testing
+- **Standards**: All values referenced to DIN EN 12831, VDI 6030, VDI 2067, GEG
+- **Domain**: Combines mechanical engineering background with ML for energy optimization
+- **Tech**: Python, Streamlit, Plotly, scikit-learn, Pandas
+
 ### 📈 Retail & Demand Forecasting
 **[Corporación Favorita Demand Forecasting](https://github.com/albertodiazdurana/Demand-forecasting-in-retail)** | **[Live App](https://demand-forecasting-in-retail-app.streamlit.app/)**  
 End-to-end time series forecasting pipeline for Ecuadorian grocery inventory optimization.
