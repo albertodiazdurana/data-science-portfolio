@@ -111,20 +111,23 @@ Specialized expertise in optimization and simulation of energy systems through a
 
 ## 🛠️ Technical Skills
 
-**Languages & Core Tools**  
+**Languages & Core Tools**
 Python | SQL | Git | Jupyter
 
-**ML & Data Science**  
+**ML & Data Science**
 TensorFlow | XGBoost | scikit-learn | statsmodels | Prophet | SHAP | SMOTE
 
-**Data Engineering & MLOps**  
+**NLP & Deep Learning**
+NLTK | Gensim | ResNet | Transfer Learning | LDA Topic Modeling
+
+**Data Engineering & MLOps**
 Spark | Polars | Dask | MLflow | FastAPI | AWS | Argo Workflows | Sentry
 
-**Visualization & BI**  
-Streamlit | Power BI | Matplotlib | Seaborn | Dash
+**Visualization & BI**
+Streamlit | Plotly | Power BI | Matplotlib | Seaborn | Dash
 
-**Specialized**  
-Energy Systems Modeling | Process Mining (PM4Py) | NLP | Time Series Forecasting | LLM Integration | RAG
+**Specialized**
+Energy Systems Modeling | Process Mining (PM4Py) | Time Series Forecasting | LLM Integration | RAG
 
 ## 💼 Professional Highlights
 
