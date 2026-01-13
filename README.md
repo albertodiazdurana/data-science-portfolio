@@ -7,6 +7,16 @@ Senior Data Scientist with a decade of international experience deploying produc
 
 ## 🎯 Featured Projects
 
+### 🤖 LLM & Agentic AI
+**[DevFlow Analyzer](https://github.com/albertodiazdurana/devflow-analyzer)**
+Process mining + LLM agent system that analyzes CI/CD pipelines to identify bottlenecks and generate optimization recommendations.
+- **Agent Architecture**: ReAct-style autonomous agent using LangChain, iteratively invoking analysis tools and refining insights
+- **Process Mining**: PM4Py-powered extraction of directly-follows graphs, bottleneck maps, and workflow variants from 519K+ builds
+- **Multi-Provider LLM**: Unified interface supporting Anthropic Claude, OpenAI GPT-4, and Ollama (local models)
+- **Evaluation Pipeline**: MLflow experiment tracking with ROUGE metrics for prompt A/B testing and provider comparisons
+- **Dashboard**: Streamlit UI for data upload, metrics visualization, agent reports, and evaluation results
+- **Tech**: LangChain, PM4Py, MLflow, Streamlit, Anthropic/OpenAI APIs, pytest
+
 ### 🔥 Energy Systems — Heating Curve Simulator
 **[Residential Energy Systems](https://github.com/albertodiazdurana/DataScience_ResidentialEnergySystems)** | **[Live App](https://data-science-residential-energy-systems-heating-curve.streamlit.app/)**  
 Interactive tool for simulating and analyzing residential heating curves (Heizkennlinie) based on German engineering standards.
@@ -118,7 +128,7 @@ Python | SQL | Git | Jupyter
 TensorFlow | XGBoost | scikit-learn | statsmodels | Prophet | SHAP | SMOTE
 
 **NLP & Deep Learning**
-NLTK | Gensim | ResNet | Transfer Learning | LDA Topic Modeling
+LangChain | NLTK | Gensim | ResNet | Transfer Learning | LDA Topic Modeling
 
 **Data Engineering & MLOps**
 Spark | Polars | Dask | MLflow | FastAPI | AWS | Argo Workflows | Sentry
