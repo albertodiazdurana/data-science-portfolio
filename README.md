@@ -1,180 +1,189 @@
-# 📊 Data Science Portfolio
+# Machine Learning Systems & Agentic AI Portfolio
 
-**Alberto Diaz Durana**  
-Senior Data Scientist | 10+ Years Experience | Production ML & Business Process Optimization
+**Alberto Diaz-Durana**
+Senior Data Scientist / ML Engineer | 10+ Years Experience | Production ML & Applied Research
 
-Senior Data Scientist with a decade of international experience deploying production-ready ML solutions across manufacturing, sustainability, and financial services. Expertise in time series forecasting, process mining, and end-to-end data engineering pipelines. Currently specializing in LLM integration and RAG systems at Masterschool.
+Senior ML practitioner with a decade of international experience building end-to-end machine learning systems, from research prototyping to production deployment. My work focuses on **ML systems design**, **NLP**, **agentic AI**, and **process mining**, with strong emphasis on reproducibility, evaluation, and real-world impact.
 
-## 🎯 Featured Projects
+This portfolio demonstrates:
+- Designing ML systems from scratch
+- Translating research ideas into production-ready pipelines
+- Working with unstructured text, logs, and sequential data
+- Building agentic AI systems that reason, invoke tools, and generate actionable insights
 
-### 🤖 LLM & Agentic AI
-**[DevFlow Analyzer](https://github.com/albertodiazdurana/devflow-analyzer)**
-Process mining + LLM agent system that analyzes CI/CD pipelines to identify bottlenecks and generate optimization recommendations.
-- **Agent Architecture**: ReAct-style autonomous agent using LangChain, iteratively invoking analysis tools and refining insights
-- **Process Mining**: PM4Py-powered extraction of directly-follows graphs, bottleneck maps, and workflow variants from 519K+ builds
-- **Multi-Provider LLM**: Unified interface supporting Anthropic Claude, OpenAI GPT-4, and Ollama (local models)
-- **Evaluation Pipeline**: MLflow experiment tracking with ROUGE metrics for prompt A/B testing and provider comparisons
-- **Dashboard**: Streamlit UI for data upload, metrics visualization, agent reports, and evaluation results
-- **Tech**: LangChain, PM4Py, MLflow, Streamlit, Anthropic/OpenAI APIs, pytest
+---
 
-### 🔥 Energy Systems — Heating Curve Simulator
-**[Residential Energy Systems](https://github.com/albertodiazdurana/DataScience_ResidentialEnergySystems)** | **[Live App](https://data-science-residential-energy-systems-heating-curve.streamlit.app/)**  
-Interactive tool for simulating and analyzing residential heating curves (Heizkennlinie) based on German engineering standards.
-- **Simulation**: Real weather data from 8 German cities via Open-Meteo API
-- **Building Presets**: Heat Pump (slope 0.3) to Historic Altbau (slope 1.6)
-- **Analysis**: Parameter extraction using OLS and RANSAC regression
-- **Noise Models**: Clean → Realistic scenarios for algorithm robustness testing
-- **Standards**: All values referenced to DIN EN 12831, VDI 6030, VDI 2067, GEG
-- **Domain**: Combines mechanical engineering background with ML for energy optimization
-- **Tech**: Python, Streamlit, Plotly, scikit-learn, Pandas
+## 🔍 What to Look at First
 
-### 📈 Retail & Demand Forecasting
-**[Corporación Favorita Demand Forecasting](https://github.com/albertodiazdurana/Demand-forecasting-in-retail)** | **[Live App](https://demand-forecasting-in-retail-app.streamlit.app/)**  
-End-to-end time series forecasting pipeline for Ecuadorian grocery inventory optimization.
-- **Production Model**: XGBoost achieving RMSE 6.40 (11% improvement over baseline), deployed via Streamlit
-- **Scale**: 4.8M transactions, 10 stores, 2,638 items, 32 product families
-- **Features**: 33 optimized features (lag, rolling statistics, calendar, aggregations) after ablation studies removed 12 harmful features
-- **Key Finding**: Temporal consistency beats data volume—seasonally aligned training (Q4+Q1) outperformed 7x larger dataset by 54%
-- **Experiments**: 16 MLflow runs tracking model evolution; LSTM won on sample (300K), XGBoost won at scale (4.8M)
-- **Quality**: 24 pytest tests, production-hardened codebase
-- **Tech**: XGBoost, TensorFlow/LSTM, MLflow, Streamlit, WSL2 GPU acceleration, pytest
+If you are reviewing this portfolio for **Senior ML Engineer / Research Engineer** roles, start here:
 
-### 👥 Customer Intelligence
-**[TravelTide Customer Segmentation](https://github.com/albertodiazdurana/TravelTide_Customer_Segmentation)**  
-Behavioral clustering and propensity modeling for personalized rewards program.
-- **Outcome**: 5,765 users segmented, $23M CLV analyzed, 5 perks optimally assigned
-- **Methods**: Hierarchical clustering (K=3), PCA, propensity scoring
-- **Confidence**: 97.2% HIGH/MEDIUM confidence assignments
-- **Tech**: scikit-learn, pandas, matplotlib
+| Project | Focus | Why It Matters |
+|---------|-------|----------------|
+| [DevFlow Analyzer](https://github.com/albertodiazdurana/devflow-analyzer) | Agentic AI + Process Mining | ML applied to code-adjacent artifacts (CI/CD logs, execution traces) |
+| [Demand Forecasting](https://github.com/albertodiazdurana/Demand-forecasting-in-retail) | End-to-End ML Pipeline | Full lifecycle ownership at scale (4.8M records) |
+| [Computer Vision](https://github.com/albertodiazdurana/computer_vision) | Deep Learning + Interpretability | Applied DL with evaluation rigor and explainability |
+| [NLP Topic Modeling](https://github.com/albertodiazdurana/nlp-topic-modeling) | NLP + Sequential Data | Pre-LLM innovation combining NLP with event-based data |
 
-### 💰 Financial Risk Modeling
-**[Loan Approval Prediction](https://github.com/albertodiazdurana/loan-approval-prediction)**  
-Binary classification for credit risk assessment with model interpretability.
-- **Performance**: 80% test accuracy with Random Forest, 5-fold cross-validation
-- **Features**: SMOTE for class imbalance, GridSearchCV (108 combinations), SHAP analysis
-- **Deliverables**: 100-question interview Q&A guide
-- **Tech**: scikit-learn, SHAP, imbalanced-learn
+These projects best reflect how I approach ML system design, experimentation, and deployment.
 
-### 🖼️ Computer Vision & Deep Learning
-**[Computer Vision for Manufacturing Quality Control](https://github.com/albertodiazdurana/computer_vision)**
+---
+
+## ⭐ Featured Projects
+
+### 🤖 DevFlow Analyzer — Agentic AI for CI/CD & Developer Workflows
+**[Repository](https://github.com/albertodiazdurana/devflow-analyzer)** | LangChain, PM4Py, MLflow, Streamlit
+
+An agentic AI system that analyzes CI/CD pipelines and developer workflows using process mining and LLM-powered reasoning.
+
+- **Problem**: CI/CD pipelines generate massive logs but lack actionable insights for developers
+- **Approach**: ReAct-style agent autonomously invokes PM4Py analysis tools, processes 519K+ builds, detects bottlenecks
+- **Evaluation**: MLflow-based pipeline with ROUGE metrics for prompt A/B testing and provider comparisons
+- **Output**: Natural-language optimization recommendations via Streamlit dashboard
+- **Multi-Provider**: Unified interface for OpenAI, Anthropic Claude, and Ollama (local models)
+
+**Why it matters**: Demonstrates how agentic AI + structured workflow data can augment developer productivity—an approach closely aligned with **ML for developer tools and code-adjacent intelligence**.
+
+---
+
+### 📈 Demand Forecasting System — Production ML at Scale
+**[Repository](https://github.com/albertodiazdurana/Demand-forecasting-in-retail)** | **[Live App](https://demand-forecasting-in-retail-app.streamlit.app/)** | XGBoost, LSTM, MLflow, Streamlit
+
+End-to-end time series forecasting pipeline for inventory optimization.
+
+- **Problem**: Predict daily sales across 2,638 items and 10 stores
+- **Scale**: 4.8M transactions; 33 engineered features after ablation studies
+- **Hypothesis Tested**: Temporal consistency vs data volume—seasonally aligned training outperformed 7x larger dataset by 54%
+- **Results**: RMSE 6.40 (11% improvement); XGBoost won at scale, LSTM won on sample
+- **Quality**: 16 MLflow runs, 24 pytest tests, production-hardened codebase
+
+**Why it matters**: Full ML lifecycle ownership from data ingestion to user-facing delivery.
+
+---
+
+### 🖼️ Computer Vision for Manufacturing Quality Control
+**[Repository](https://github.com/albertodiazdurana/computer_vision)** | **[Live App](https://computer-vision-steel-defect-segmentation.streamlit.app/)** | TensorFlow, MLflow, Streamlit
+
 Deep learning projects for industrial quality inspection and defect detection.
 
 **Casting Defect Detection** (Anomaly Detection)
-- **Method**: Convolutional autoencoder trained on non-defective samples only; no labeled defect data required
-- **Performance**: 0.869 ROC-AUC, 77.5% accuracy, 91% defect precision
-- **Application**: Manufacturing quality inspection and surface defect identification
+- Convolutional autoencoder trained on non-defective samples only; no labeled defect data required
+- ROC-AUC: 0.869, 91% defect precision
+- Grad-CAM visualizations for model interpretability
 
-**Steel Defect Segmentation** ([Live App](https://computer-vision-steel-defect-segmentation.streamlit.app/))
-- **Architecture**: U-Net (487K parameters) on Severstal Steel dataset (4,000 images)
-- **Performance**: 0.42 Dice coefficient, 0.28 IoU; handles severely imbalanced data (~3% defect pixels)
-- **Loss Function**: Combined BCE + Dice loss for class imbalance
+**Steel Defect Segmentation** (Semantic Segmentation)
+- U-Net (487K parameters) on Severstal Steel dataset (4,000 images)
+- Dice: 0.42, IoU: 0.28; handles severely imbalanced data (~3% defect pixels)
+- Combined BCE + Dice loss for class imbalance
 
 **CIFAR-10 Classification** (Transfer Learning)
-- **Architecture**: ResNet50 backbone with custom head, two-phase training
-- **Performance**: 48.9% accuracy; fine-tuning provided 4.7× improvement over frozen features
+- ResNet50 backbone with custom head; fine-tuning provided 4.7× improvement over frozen features
 
-- **Tech**: TensorFlow/Keras, MLflow, Streamlit, Grad-CAM, pytest
+**Why it matters**: Applied deep learning with evaluation rigor and explainability, not just model training.
 
-### 🏭 Industrial ML & Manufacturing
-**[Cement Strength Prediction](https://github.com/albertodiazdurana/cement-strength-prediction-XGBoost)**
-Regression model predicting 28-day compressive strength from analytical measurements.
-- **Application**: Real-world manufacturing scenario with dynamic raw materials
-- **Methods**: XGBoost with time series cross-validation
-- **Features**: XRD, XRF, PSD data; temporal feature extraction
-- **Tech**: XGBoost, Python 3.12, scikit-learn
+---
 
-### 📝 NLP & Text Analytics
-**[Topic Modeling & Clustering](https://github.com/albertodiazdurana/nlp-topic-modeling)**
-Unsupervised text analysis for case management data, extracting patterns from Jira triage comments.
-- **Methods**: LDA topic modeling (coherence-optimized), hierarchical clustering (Ward), K-means with silhouette analysis
-- **NLP Pipeline**: Tokenization, lemmatization, bigram/trigram detection, stopword removal
-- **Output**: Case-level attributes with cluster assignments, dominant topics, and top terms for process mining
-- **Tech**: NLTK, Gensim, scikit-learn, pandas, matplotlib
+### 📝 NLP Topic Modeling — Pre-LLM Text-to-Structure Innovation
+**[Repository](https://github.com/albertodiazdurana/nlp-topic-modeling)** | NLTK, Gensim, scikit-learn
 
-### ⚙️ Business Process Optimization
-**[Process Mining & Sentiment Analysis](https://github.com/albertodiazdurana/process-mining-and-sentiment_analysis)**
-End-to-end process mining with NLP sentiment analysis.
-- **Analysis**: Directly-Follows Graph (DFG) with frequency and time metrics
-- **NLP**: Twitter scraping (Twint), EDA, sentiment analysis
-- **Tech**: PM4Py, Python, NLP libraries
+Unsupervised text analysis converting Jira comments into structured attributes for process mining.
 
-### 🔧 Data Engineering & ETL
-**[Log Processor ETL Pipeline](https://github.com/albertodiazdurana/log-processor)**
-ETL pipeline converting BPM operational data into process mining event logs.
-- **Architecture**: REST API extraction → deduplication → timestamp splitting → business logic → join → upload
-- **Input**: 3 normalized BPM tables (ProcInst, ActInst, ASS with 100+ fields)
-- **Features**: Pagination, incremental loads, batch processing, multiple event type handlers
-- **Deployment**: PyInstaller Windows executables with tkinter GUI
-- **Tech**: Python, pandas, requests, Conda
+- **Problem**: Extract actionable patterns from unstructured case management data
+- **Methods**: LDA topic modeling (coherence-optimized), hierarchical clustering, K-means with silhouette analysis
+- **Pipeline**: Tokenization → lemmatization → bigram/trigram detection → stopword removal
+- **Output**: Case-level attributes with cluster assignments, dominant topics, top terms
 
-## ⚡ Domain Expertise: Energy Systems Engineering
+**Why it matters**: Early example (pre-LLM era) of combining NLP with sequential/event-based data—a transferable skill for ML on logs, traces, and code-adjacent artifacts.
 
-### Thermo-Economic & Exergo-Economic Analysis
-Specialized expertise in optimization and simulation of energy systems through advanced thermodynamic and economic modeling.
+---
 
-**Technical Approach:**
-- **Exergy Analysis**: Quantifying energy quality and system irreversibilities using second-law thermodynamics
-- **Cost Allocation**: Applying exergoeconomic principles to optimize equipment selection and operational parameters
-- **System Optimization**: Multi-objective optimization integrating thermodynamic performance with economic feasibility
-- **Applications**: Cogeneration systems, renewable energy integration, energy storage systems, building energy systems
+## 🔬 Additional Projects
 
-**Notable Projects:**
-- **GETEC Wärme & Effizienz AG**: Data analysis and budgetary forecasting for 225 real estate energy projects (€71.5M investment portfolio). Calculation, cost estimation, and design of energy generation systems.
-- **PhD Research (TU Berlin)**: Energy access prediction in low-income regions using semi-supervised ML and neural networks. Application of comparative analysis and classification for household-level energy planning.
-- **Publication**: "Prediction of cost-efficient measures to improve energy access for populations living in energy poverty using modern methods of information technology"
+### Energy Systems — Heating Curve Simulator
+**[Repository](https://github.com/albertodiazdurana/DataScience_ResidentialEnergySystems)** | **[Live App](https://data-science-residential-energy-systems-heating-curve.streamlit.app/)**
 
-**Methodologies:**
-- Mass, energy, and exergy balance modeling under steady-state conditions
-- Thermoeconomic optimization for minimizing unit cost of produced exergy
-- Integration of process simulators with optimization frameworks
-- Variable load condition analysis and off-design operation evaluation
+Interactive tool for residential heating curves based on German engineering standards (DIN EN 12831, VDI 6030).
+- Real weather data from 8 German cities
+- OLS and RANSAC regression for parameter extraction
+- Combines mechanical engineering background with ML
+
+### Customer Segmentation & CLV Analysis
+**[Repository](https://github.com/albertodiazdurana/TravelTide_Customer_Segmentation)**
+
+Behavioral clustering for personalized rewards: 5,765 users, $23M CLV analyzed, 97.2% confidence.
+
+### Financial Risk Modeling
+**[Repository](https://github.com/albertodiazdurana/loan-approval-prediction)**
+
+Credit risk classification with SHAP interpretability: 80% accuracy, SMOTE for imbalance.
+
+### Log Processor ETL Pipeline
+**[Repository](https://github.com/albertodiazdurana/log-processor)**
+
+Production ETL converting BPM operational data into event logs: REST API extraction, deduplication, batch processing, PyInstaller deployment.
+
+### Industrial ML — Cement Strength Prediction
+**[Repository](https://github.com/albertodiazdurana/cement-strength-prediction-XGBoost)**
+
+XGBoost regression for 28-day compressive strength from XRD/XRF/PSD measurements.
+
+---
+
+## 🛠️ Core Technical Themes
+
+| Theme | Evidence |
+|-------|----------|
+| **ML Systems from Scratch** | Design → deployment → monitoring across all featured projects |
+| **Reproducible Experimentation** | MLflow tracking, CI/CD, pytest coverage |
+| **Agentic AI & LLM Integration** | DevFlow Analyzer, multi-provider LLM support |
+| **NLP & Unstructured Data** | Topic modeling, sentiment analysis, text-to-structure |
+| **Sequential & Workflow Data** | Process mining, CI/CD logs, event traces |
+| **Production-Grade Engineering** | Streamlit apps, API integration, Windows deployment |
+
+---
 
 ## 🛠️ Technical Skills
 
-**Languages & Core Tools**
-Python | SQL | Git | Jupyter
+**Languages & Core Tools**: Python | SQL | Git | Jupyter
 
-**ML & Data Science**
-TensorFlow | XGBoost | scikit-learn | statsmodels | Prophet | SHAP | SMOTE
+**ML & Data Science**: TensorFlow | XGBoost | scikit-learn | statsmodels | Prophet | SHAP | SMOTE
 
-**NLP & Deep Learning**
-LangChain | NLTK | Gensim | U-Net | ResNet | Autoencoders | Transfer Learning | LDA Topic Modeling
+**NLP & Deep Learning**: LangChain | NLTK | Gensim | U-Net | ResNet | Autoencoders | Transfer Learning
 
-**Data Engineering & MLOps**
-Spark | Polars | Dask | MLflow | FastAPI | AWS | Argo Workflows | Sentry
+**Data Engineering & MLOps**: Spark | Polars | Dask | MLflow | FastAPI | AWS | Argo Workflows
 
-**Visualization & BI**
-Streamlit | Plotly | Power BI | Matplotlib | Seaborn | Dash
+**Visualization & BI**: Streamlit | Plotly | Power BI | Matplotlib | Seaborn | Dash
 
-**Specialized**
-Energy Systems Modeling | Process Mining (PM4Py) | Time Series Forecasting | LLM Integration | RAG
+**Specialized**: Process Mining (PM4Py) | Time Series Forecasting | LLM Integration | RAG | Energy Systems
+
+---
 
 ## 💼 Professional Highlights
 
 - **Alcemy GmbH** (2024-2025): Deployed 5+ ML models optimizing cement production, cutting CO₂ emissions across 35+ customers
 - **Appian Software** (2021-2024): Led 10+ process mining assessments, reducing process times ~20% on average
 - **HEDERA Solutions** (2018-2021): Co-founded sustainability startup, built cloud-based systems for 15+ international projects
-- **TU Berlin** (2019-2021): PhD research in energy access prediction, applied semi-supervised ML to low-income region classification
-- **GETEC Wärme & Effizienz** (2014-2015): Energy systems engineering for €71.5M portfolio of 225 projects
+- **TU Berlin** (2019-2021): PhD research in energy access prediction using semi-supervised ML
 
-## 📜 Certifications
+---
 
-- MLOps Specialization (DeepLearning.AI, 2024)
-- Project Management Professional - PMP (PMI, 2016)
-- Data Analytics for Six Sigma (University of Amsterdam, 2017)
+## 🎓 Education & Certifications
+
+- **Masterschool** — AI Data Science (2025-2026): LLM integration, RAG, prompt engineering
+- **TU Berlin** — MSc Process, Energy & Environmental Systems Engineering (2013)
+- **TU Berlin** — PhD Candidate, Energy Planning & ML (2019-2021)
+- **Universidad de Los Andes** — Mechanical Engineering (2006)
+- **DeepLearning.AI** — MLOps Specialization (2024)
+- **PMI** — Project Management Professional (2016)
 
 [View all certifications →](https://github.com/albertodiazdurana/Certificates)
 
-## 🎓 Education
-
-- **Masterschool** - AI Data Science (2025-2026): LLM integration, RAG, prompt engineering
-- **TU Berlin** - MSc Process, Energy & Environmental Systems Engineering (2013): Specialization in thermo-economic modeling and sustainable energy systems
-- **TU Berlin** - PhD Candidate in Energy Planning & Machine Learning (2019-2021): Energy access prediction, semi-supervised ML for sustainability applications
-- **Universidad de Los Andes** - Mechanical Engineering (2006)
+---
 
 ## 🌍 Languages
 
 Spanish (Native) | English (C2) | German (C2) | Portuguese (B2)
+
+---
 
 ## 📫 Connect
 
@@ -182,4 +191,6 @@ Spanish (Native) | English (C2) | German (C2) | Portuguese (B2)
 
 ---
 
-⭐ **Currently open to new opportunities** in data science, ML engineering, and AI product development
+**Note**: This portfolio is intentionally systems-oriented rather than notebook-centric. My goal is to demonstrate how I think about ML as an engineering and research discipline, not just model training.
+
+⭐ **Currently open to opportunities** in ML Engineering, Applied Research, and AI Product Development
