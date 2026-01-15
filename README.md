@@ -56,14 +56,24 @@ Binary classification for credit risk assessment with model interpretability.
 - **Tech**: scikit-learn, SHAP, imbalanced-learn
 
 ### 🖼️ Computer Vision & Deep Learning
-**[CIFAR-10 Image Classification](https://github.com/albertodiazdurana/computer_vision)**
-Transfer learning study using ResNet50 for image classification on CIFAR-10 dataset.
-- **Architecture**: ResNet50 backbone with custom classification head, two-phase training strategy
-- **Performance**: 48.9% test accuracy; fine-tuning provided 4.7× improvement over frozen features
-- **Key Insight**: Input size compatibility critical—ResNet50's 224×224 requirement limits 32×32 image classification ceiling
-- **Data Augmentation**: Random flips, rotations, zoom for robust feature learning
-- **Analysis**: Confusion matrix reveals visual similarity drives misclassifications (ship/airplane, deer/horse pairs)
-- **Tech**: TensorFlow 2.20, ResNet50, scikit-learn, Jupyter, GPU acceleration (NVIDIA Quadro)
+**[Computer Vision for Manufacturing Quality Control](https://github.com/albertodiazdurana/computer_vision)**
+Deep learning projects for industrial quality inspection and defect detection.
+
+**Casting Defect Detection** (Anomaly Detection)
+- **Method**: Convolutional autoencoder trained on non-defective samples only; no labeled defect data required
+- **Performance**: 0.869 ROC-AUC, 77.5% accuracy, 91% defect precision
+- **Application**: Manufacturing quality inspection and surface defect identification
+
+**Steel Defect Segmentation** ([Live App](https://computer-vision-steel-defect-segmentation.streamlit.app/))
+- **Architecture**: U-Net (487K parameters) on Severstal Steel dataset (4,000 images)
+- **Performance**: 0.42 Dice coefficient, 0.28 IoU; handles severely imbalanced data (~3% defect pixels)
+- **Loss Function**: Combined BCE + Dice loss for class imbalance
+
+**CIFAR-10 Classification** (Transfer Learning)
+- **Architecture**: ResNet50 backbone with custom head, two-phase training
+- **Performance**: 48.9% accuracy; fine-tuning provided 4.7× improvement over frozen features
+
+- **Tech**: TensorFlow/Keras, MLflow, Streamlit, Grad-CAM, pytest
 
 ### 🏭 Industrial ML & Manufacturing
 **[Cement Strength Prediction](https://github.com/albertodiazdurana/cement-strength-prediction-XGBoost)**
@@ -128,7 +138,7 @@ Python | SQL | Git | Jupyter
 TensorFlow | XGBoost | scikit-learn | statsmodels | Prophet | SHAP | SMOTE
 
 **NLP & Deep Learning**
-LangChain | NLTK | Gensim | ResNet | Transfer Learning | LDA Topic Modeling
+LangChain | NLTK | Gensim | U-Net | ResNet | Autoencoders | Transfer Learning | LDA Topic Modeling
 
 **Data Engineering & MLOps**
 Spark | Polars | Dask | MLflow | FastAPI | AWS | Argo Workflows | Sentry
