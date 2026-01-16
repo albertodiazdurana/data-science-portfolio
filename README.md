@@ -31,15 +31,16 @@ These projects best reflect how I approach ML system design, experimentation, an
 ## ⭐ Featured Projects
 
 ### 🤖 DevFlow Analyzer — Agentic AI for CI/CD & Developer Workflows
-**[Repository](https://github.com/albertodiazdurana/devflow-analyzer)** | LangChain, PM4Py, MLflow, Streamlit
+**[Repository](https://github.com/albertodiazdurana/devflow-analyzer)** | **[Live App](https://devflow-analyzer.streamlit.app/)** | LangChain, LangGraph, PM4Py, MLflow, Streamlit
 
-An agentic AI system that analyzes CI/CD pipelines and developer workflows using process mining and LLM-powered reasoning.
+An intelligent system that analyzes CI/CD build logs using process mining to identify performance bottlenecks, failure patterns, and generate actionable recommendations through LLM-powered insights.
 
 - **Problem**: CI/CD pipelines generate massive logs but lack actionable insights for developers
-- **Approach**: ReAct-style agent autonomously invokes PM4Py analysis tools, processes 519K+ builds, detects bottlenecks
-- **Evaluation**: MLflow-based pipeline with ROUGE metrics for prompt A/B testing and provider comparisons
-- **Output**: Natural-language optimization recommendations via Streamlit dashboard
-- **Multi-Provider**: Unified interface for OpenAI, Anthropic Claude, and Ollama (local models)
+- **Approach**: ReAct-style agent with specialized tools autonomously invokes PM4Py analysis, generates DFG visualizations showing build status transitions
+- **Scale**: Analyzes 10,000+ CI/CD builds across 21 open-source Java projects (TravisTorrent dataset)
+- **Evaluation**: MLflow integration for experiment tracking, ROUGE scoring, cost analysis, and A/B testing
+- **Quality**: 86 pytest tests, user ratings tracking (quality, relevance, completeness, actionability)
+- **Multi-Provider**: OpenAI GPT-4o/4o-mini, Claude, or local Ollama instances
 
 **Why it matters**: Demonstrates how agentic AI + structured workflow data can augment developer productivity—an approach closely aligned with **ML for developer tools and code-adjacent intelligence**.
 
@@ -147,7 +148,7 @@ XGBoost regression for 28-day compressive strength from XRD/XRF/PSD measurements
 
 **ML & Data Science**: TensorFlow | XGBoost | scikit-learn | statsmodels | Prophet | SHAP | SMOTE
 
-**NLP & Deep Learning**: LangChain | NLTK | Gensim | U-Net | ResNet | Autoencoders | Transfer Learning
+**NLP & Deep Learning**: LangChain | LangGraph | NLTK | Gensim | U-Net | ResNet | Autoencoders | Transfer Learning
 
 **Data Engineering & MLOps**: Spark | Polars | Dask | MLflow | FastAPI | AWS | Argo Workflows
 
