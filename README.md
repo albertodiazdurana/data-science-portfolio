@@ -13,24 +13,24 @@ This portfolio demonstrates:
 
 ---
 
-## 🔍 What to Look at First
+## What to Look at First
 
 If you are reviewing this portfolio for **Senior ML Engineer / Research Engineer** roles, start here:
 
-| Project | Focus | Why It Matters |
-|---------|-------|----------------|
-| [DevFlow Analyzer](https://github.com/albertodiazdurana/devflow-analyzer) | Agentic AI + Process Mining | ML applied to code-adjacent artifacts (CI/CD logs, execution traces) |
-| [Demand Forecasting](https://github.com/albertodiazdurana/Demand-forecasting-in-retail) | End-to-End ML Pipeline | Full lifecycle ownership at scale (4.8M records) |
-| [Computer Vision](https://github.com/albertodiazdurana/computer_vision) | Deep Learning + Interpretability | Applied DL with evaluation rigor and explainability |
-| [NLP Topic Modeling](https://github.com/albertodiazdurana/nlp-topic-modeling) | NLP + Sequential Data | Pre-LLM innovation combining NLP with event-based data |
+| Project                                                                                 | Focus                            | Why It Matters                                                       |
+| --------------------------------------------------------------------------------------- | -------------------------------- | -------------------------------------------------------------------- |
+| [DevFlow Analyzer](https://github.com/albertodiazdurana/devflow-analyzer)               | Agentic AI + Process Mining      | ML applied to code-adjacent artifacts (CI/CD logs, execution traces) |
+| [Demand Forecasting](https://github.com/albertodiazdurana/Demand-forecasting-in-retail) | End-to-End ML Pipeline           | Full lifecycle ownership at scale (4.8M records)                     |
+| [Computer Vision](https://github.com/albertodiazdurana/computer_vision)                 | Deep Learning + Interpretability | Applied DL with evaluation rigor and explainability                  |
+| [NLP Topic Modeling](https://github.com/albertodiazdurana/nlp-topic-modeling)           | NLP + Sequential Data            | Pre-LLM innovation combining NLP with event-based data               |
 
 These projects best reflect how I approach ML system design, experimentation, and deployment.
 
 ---
 
-## ⭐ Featured Projects
+## Featured Projects
 
-### 🤖 DevFlow Analyzer — Agentic AI for CI/CD & Developer Workflows
+### DevFlow Analyzer — Agentic AI for CI/CD & Developer Workflows
 **[Repository](https://github.com/albertodiazdurana/devflow-analyzer)** | **[Live App](https://devflow-analyzer.streamlit.app/)** | LangChain, LangGraph, PM4Py, MLflow, Streamlit
 
 An intelligent system that analyzes CI/CD build logs using process mining to identify performance bottlenecks, failure patterns, and generate actionable recommendations through LLM-powered insights.
@@ -46,7 +46,7 @@ An intelligent system that analyzes CI/CD build logs using process mining to ide
 
 ---
 
-### 📈 Demand Forecasting System — Production ML at Scale
+### Demand Forecasting System — Production ML at Scale
 **[Repository](https://github.com/albertodiazdurana/Demand-forecasting-in-retail)** | **[Live App](https://demand-forecasting-in-retail-app.streamlit.app/)** | XGBoost, LSTM, MLflow, Streamlit
 
 End-to-end time series forecasting pipeline for inventory optimization.
@@ -61,7 +61,7 @@ End-to-end time series forecasting pipeline for inventory optimization.
 
 ---
 
-### 🖼️ Computer Vision for Manufacturing Quality Control
+### Computer Vision for Manufacturing Quality Control
 **[Repository](https://github.com/albertodiazdurana/computer_vision)** | **[Live App](https://computer-vision-steel-defect-segmentation.streamlit.app/)** | TensorFlow, MLflow, Streamlit
 
 Deep learning projects for industrial quality inspection and defect detection.
@@ -83,7 +83,7 @@ Deep learning projects for industrial quality inspection and defect detection.
 
 ---
 
-### 📝 NLP Topic Modeling — Pre-LLM Text-to-Structure Innovation
+### NLP Topic Modeling — Pre-LLM Text-to-Structure Innovation
 **[Repository](https://github.com/albertodiazdurana/nlp-topic-modeling)** | NLTK, Gensim, scikit-learn
 
 Unsupervised text analysis converting Jira comments into structured attributes for process mining.
@@ -97,7 +97,7 @@ Unsupervised text analysis converting Jira comments into structured attributes f
 
 ---
 
-## 🔬 Additional Projects
+## Additional Projects
 
 ### Energy Systems — Heating Curve Simulator
 **[Repository](https://github.com/albertodiazdurana/DataScience_ResidentialEnergySystems)** | **[Live App](https://data-science-residential-energy-systems-heating-curve.streamlit.app/)**
@@ -129,20 +129,20 @@ XGBoost regression for 28-day compressive strength from XRD/XRF/PSD measurements
 
 ---
 
-## 🛠️ Core Technical Themes
+## Core Technical Themes
 
-| Theme | Evidence |
-|-------|----------|
-| **ML Systems from Scratch** | Design → deployment → monitoring across all featured projects |
-| **Reproducible Experimentation** | MLflow tracking, CI/CD, pytest coverage |
-| **Agentic AI & LLM Integration** | DevFlow Analyzer, multi-provider LLM support |
-| **NLP & Unstructured Data** | Topic modeling, sentiment analysis, text-to-structure |
-| **Sequential & Workflow Data** | Process mining, CI/CD logs, event traces |
-| **Production-Grade Engineering** | Streamlit apps, API integration, Windows deployment |
+| Theme                            | Evidence                                                      |
+| -------------------------------- | ------------------------------------------------------------- |
+| **ML Systems from Scratch**      | Design → deployment → monitoring across all featured projects |
+| **Reproducible Experimentation** | MLflow tracking, CI/CD, pytest coverage                       |
+| **Agentic AI & LLM Integration** | DevFlow Analyzer, multi-provider LLM support                  |
+| **NLP & Unstructured Data**      | Topic modeling, sentiment analysis, text-to-structure         |
+| **Sequential & Workflow Data**   | Process mining, CI/CD logs, event traces                      |
+| **Production-Grade Engineering** | Streamlit apps, API integration, Windows deployment           |
 
 ---
 
-## 🛠️ Technical Skills
+## Technical Skills
 
 **Languages & Core Tools**: Python | SQL | Git | Jupyter
 
@@ -158,23 +158,34 @@ XGBoost regression for 28-day compressive strength from XRD/XRF/PSD measurements
 
 ---
 
-## 💼 Professional Highlights
+## Professional Highlights
 
 - **Alcemy GmbH** (2024-2025): Deployed 5+ ML models optimizing cement production, cutting CO₂ emissions across 35+ customers
 - **Appian Software** (2021-2024): Led 10+ process mining assessments, reducing process times ~20% on average
-- **HEDERA Solutions** (2018-2021): Co-founded sustainability startup, built cloud-based systems for 15+ international projects
+- **HEDERA Sustainable Solutions GmbH** (2018-2021): Co-founded sustainability startup, built cloud-based systems for 15+ international projects
 - **TU Berlin** (2019-2021): PhD research in energy access prediction using semi-supervised ML
 
 ---
 
-## 🎓 Education & Certifications
+## EDUCATION & CERTIFICATIONS
 
-- **Masterschool** — AI Data Science (2025-2026): LLM integration, RAG, prompt engineering
-- **TU Berlin** — MSc Process, Energy & Environmental Systems Engineering (2013)
-- **TU Berlin** — PhD Candidate, Energy Planning & ML (2019-2021)
-- **Universidad de Los Andes** — Mechanical Engineering (2006)
-- **DeepLearning.AI** — MLOps Specialization (2024)
-- **PMI** — Project Management Professional (2016)
+**AI Data Science Program** (LLM, RAG, Agentic AI) – Masterschool | Apr 2025 - May 2026
+Specialization in LLM integration, RAG systems, prompt engineering. LangChain, vector databases, embedding techniques.
+
+**MSc Process, Energy & Environmental Systems Engineering** – TU Berlin | 2010-2013
+Specialization in thermo-economic modeling, exergy analysis, building energy systems optimization.
+
+**PhD Candidate, Energy Planning & Machine Learning** – TU Berlin | 2019-2021
+Research: Energy access prediction using semi-supervised ML. Publication on cost-efficient measures for energy poverty.
+
+**Diploma Mechanical Engineering** – Universidad de Los Andes, Colombia | 2001-2006
+
+**Certifications:**
+- MLOps Specialization (DeepLearning.AI, 2024)
+- Data Analytics for Six Sigma (University of Amsterdam, 2017)
+- PMP – Project Management Professional (PMI, 2016)
+
+---
 
 [View all certifications →](https://github.com/albertodiazdurana/Certificates)
 
