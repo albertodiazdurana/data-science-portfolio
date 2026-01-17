@@ -33,14 +33,15 @@ These projects best reflect how I approach ML system design, experimentation, an
 ### DevFlow Analyzer — Agentic AI for CI/CD & Developer Workflows
 **[Repository](https://github.com/albertodiazdurana/devflow-analyzer)** | **[Live App](https://devflow-analyzer.streamlit.app/)** | LangChain, LangGraph, PM4Py, MLflow, Streamlit
 
-An intelligent system that analyzes CI/CD build logs using process mining to identify performance bottlenecks, failure patterns, and generate actionable recommendations through LLM-powered insights.
+An agentic ML system that analyzes CI/CD build data through process mining, identifies operational bottlenecks and failure patterns, and generates actionable insights using LLM-powered natural language generation.
 
 - **Problem**: CI/CD pipelines generate massive logs but lack actionable insights for developers
-- **Approach**: ReAct-style agent with specialized tools autonomously invokes PM4Py analysis, generates DFG visualizations showing build status transitions
-- **Scale**: Analyzes 10,000+ CI/CD builds across 21 open-source Java projects (TravisTorrent dataset)
-- **Evaluation**: MLflow integration for experiment tracking, ROUGE scoring, cost analysis, and A/B testing
-- **Quality**: 86 pytest tests, user ratings tracking (quality, relevance, completeness, actionability)
-- **Multi-Provider**: OpenAI GPT-4o/4o-mini, Claude, or local Ollama instances
+- **Approach**: ReAct-style agent with tool suite (summary stats, bottleneck detection, failure analysis, project comparison); generates DFG visualizations showing build status transitions
+- **Scale**: 10,000+ CI/CD builds across 21 open-source Java projects (TravisTorrent dataset)
+- **Evaluation**: MLflow experiment tracking, ROUGE scoring, A/B testing framework, cost monitoring
+- **Quality**: 86 pytest tests; automated response metrics (tokens/sec, actionability scoring)
+- **Cost Efficiency**: GPT-4o-mini primary ($0.15/1M input tokens); GPT-4o for advanced analysis
+- **Architecture**: Modular design (process_analyzer, llm_provider, agent, evaluation); 30 commits, 6-day build cycle
 
 **Why it matters**: Demonstrates how agentic AI + structured workflow data can augment developer productivity—an approach closely aligned with **ML for developer tools and code-adjacent intelligence**.
 
