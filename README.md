@@ -19,6 +19,7 @@ If you are reviewing this portfolio for **Senior ML Engineer / Research Engineer
 
 | Project                                                                                 | Focus                            | Why It Matters                                                       |
 | --------------------------------------------------------------------------------------- | -------------------------------- | -------------------------------------------------------------------- |
+| [RAG Document Assistant](https://github.com/albertodiazdurana/rag-document-assistant) *(In Development)* | RAG + Multi-Provider LLMs        | Production RAG with vector databases, FastAPI, and MLflow evaluation |
 | [DevFlow Analyzer](https://github.com/albertodiazdurana/devflow-analyzer)               | Agentic AI + Process Mining      | ML applied to code-adjacent artifacts (CI/CD logs, execution traces) |
 | [Demand Forecasting](https://github.com/albertodiazdurana/Demand-forecasting-in-retail) | End-to-End ML Pipeline           | Full lifecycle ownership at scale (4.8M records)                     |
 | [Computer Vision](https://github.com/albertodiazdurana/computer_vision)                 | Deep Learning + Interpretability | Applied DL with evaluation rigor and explainability                  |
@@ -44,6 +45,22 @@ An agentic ML system that analyzes CI/CD build data through process mining, iden
 - **Architecture**: Modular design (process_analyzer, llm_provider, agent, evaluation); 30 commits, 6-day build cycle
 
 **Why it matters**: Demonstrates how agentic AI + structured workflow data can augment developer productivity—an approach closely aligned with **ML for developer tools and code-adjacent intelligence**.
+
+---
+
+### RAG Document Assistant — Production-Ready Retrieval-Augmented Generation *(In Development)*
+**[Repository](https://github.com/albertodiazdurana/rag-document-assistant)** | LangChain, LangGraph, ChromaDB, FastAPI, MLflow, Streamlit
+
+A document Q&A system that reads your files (PDF, Markdown, TXT), understands their content, and answers questions accurately with source citations.
+
+- **Problem**: Organizations have hundreds of documents but no fast way to extract specific answers
+- **Approach**: RAG pipeline with hybrid search (semantic + BM25), multi-provider LLM support (OpenAI, Claude, Ollama)
+- **Vector Database**: ChromaDB (local) with Pinecone cloud option; configurable embeddings (OpenAI, HuggingFace multilingual-e5)
+- **Evaluation**: MLflow experiment tracking with RAG-specific metrics (faithfulness, relevance, latency)
+- **Production Features**: FastAPI REST backend, async document processing, streaming responses
+- **German Language Support**: Multilingual embeddings and prompt templates for bilingual operation
+
+**Why it matters**: Demonstrates production RAG architecture with evaluation rigor; directly addresses the most in-demand skill (80%+ of Senior AI/ML roles require RAG experience).
 
 ---
 
