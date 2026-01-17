@@ -182,6 +182,7 @@ Research: Energy access prediction using semi-supervised ML. Publication on cost
 
 **Certifications:**
 - MLOps Specialization (DeepLearning.AI, 2024)
+- future Training & Consulting GmbH – Data Science with Python (2018)
 - Data Analytics for Six Sigma (University of Amsterdam, 2017)
 - PMP – Project Management Professional (PMI, 2016)
 
