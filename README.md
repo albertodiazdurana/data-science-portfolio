@@ -162,8 +162,8 @@ XGBoost regression for 28-day compressive strength from XRD/XRF/PSD measurements
 
 - **Alcemy GmbH** (2024-2025): Deployed 5+ ML models optimizing cement production, cutting CO₂ emissions across 35+ customers
 - **Appian Software** (2021-2024): Led 10+ process mining assessments, reducing process times ~20% on average
-- **HEDERA Sustainable Solutions GmbH** (2018-2021): Co-founded sustainability startup, built cloud-based systems for 15+ international projects
 - **TU Berlin** (2019-2021): PhD research in energy access prediction using semi-supervised ML
+- **HEDERA Sustainable Solutions GmbH** (2018-2021): Co-founded sustainability startup, built cloud-based systems for 15+ international projects
 
 ---
 
