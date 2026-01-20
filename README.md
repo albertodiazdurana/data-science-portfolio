@@ -117,13 +117,13 @@ Unsupervised text analysis converting Jira comments into structured attributes f
 
 ## Additional Projects
 
-### Energy Systems — Heating Curve Simulator
-**[Repository](https://github.com/albertodiazdurana/DataScience_ResidentialEnergySystems)** | **[Live App](https://data-science-residential-energy-systems-heating-curve.streamlit.app/)**
+### Energy Systems — Data Science for Residential Heating
+**[Study Guide](https://github.com/albertodiazdurana/residential-heating-data-science-guide)** | **[Heating Curve Simulator](https://github.com/albertodiazdurana/DataScience_ResidentialEnergySystems)** | **[Live App](https://data-science-residential-energy-systems-heating-curve.streamlit.app/)**
 
-Interactive tool for residential heating curves based on German engineering standards (DIN EN 12831, VDI 6030).
-- Real weather data from 8 German cities
-- OLS and RANSAC regression for parameter extraction
-- Combines mechanical engineering background with ML
+Comprehensive educational resource combining energy engineering with ML for heating system optimization.
+- **Study Guide**: 20-chapter technical reference covering German standards (DIN, VDI, GEG), ML for energy time series, and production MLOps
+- **Heating Curve Simulator**: Interactive tool implementing DIN EN 12831, VDI 6030; real weather data from 8 German cities
+- Bridges the [60% skills gap](https://www.iea.org/news/energy-employment-has-surged-but-growing-skills-shortages-threaten-future-momentum) in energy sector data analytics
 
 ### Customer Segmentation & CLV Analysis
 **[Repository](https://github.com/albertodiazdurana/TravelTide_Customer_Segmentation)**
@@ -172,7 +172,7 @@ XGBoost regression for 28-day compressive strength from XRD/XRF/PSD measurements
 
 **Visualization & BI**: Streamlit | Plotly | Power BI | Matplotlib | Seaborn | Dash
 
-**Specialized**: Process Mining (PM4Py) | Time Series Forecasting | LLM Integration | RAG | Energy Systems
+**Specialized**: Process Mining (PM4Py) | Time Series Forecasting | LLM Integration | RAG | Energy Systems (German DIN/VDI/GEG standards)
 
 ---
 
@@ -180,7 +180,7 @@ XGBoost regression for 28-day compressive strength from XRD/XRF/PSD measurements
 
 - **Alcemy GmbH** (2024-2025): Deployed 5+ ML models optimizing cement production, cutting CO₂ emissions across 35+ customers
 - **Appian Software** (2021-2024): Led 10+ process mining assessments, reducing process times ~20% on average
-- **TU Berlin** (2019-2021): PhD research in energy access prediction using semi-supervised ML
+- **TU Berlin** (2019-2021): PhD research in energy access prediction; [CPOTE 2020 publication](https://github.com/albertodiazdurana/Prediction-of-cost-efficient-measures-to-improve-energy-access)
 - **HEDERA Sustainable Solutions GmbH** (2018-2021): Co-founded sustainability startup, built cloud-based systems for 15+ international projects
 
 ---
@@ -194,7 +194,7 @@ Specialization in LLM integration, RAG systems, prompt engineering. LangChain, v
 Specialization in thermo-economic modeling, exergy analysis, building energy systems optimization.
 
 **PhD Candidate, Energy Planning & Machine Learning** – TU Berlin | 2019-2021
-Research: Energy access prediction using semi-supervised ML. Publication on cost-efficient measures for energy poverty.
+Research: Energy access prediction using K-Means clustering, PCA, and logistic regression. [CPOTE 2020 publication](https://github.com/albertodiazdurana/Prediction-of-cost-efficient-measures-to-improve-energy-access).
 
 **Diploma Mechanical Engineering** – Universidad de Los Andes, Colombia | 2001-2006
 
