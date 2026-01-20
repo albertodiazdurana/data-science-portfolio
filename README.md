@@ -117,13 +117,13 @@ Unsupervised text analysis converting Jira comments into structured attributes f
 
 ## Additional Projects
 
-### Energy Systems — Data Science for Residential Heating
-**[Study Guide](https://github.com/albertodiazdurana/residential-heating-data-science-guide)** | **[Heating Curve Simulator](https://github.com/albertodiazdurana/DataScience_ResidentialEnergySystems)** | **[Live App](https://data-science-residential-energy-systems-heating-curve.streamlit.app/)**
+### Data Science for Residential Energy Systems
+**[Domain Reference](https://github.com/albertodiazdurana/residential-heating-data-science-guide)** | **[Heating Curve Simulator](https://github.com/albertodiazdurana/DataScience_ResidentialEnergySystems)** | **[Live App](https://data-science-residential-energy-systems-heating-curve.streamlit.app/)**
 
-Comprehensive educational resource combining energy engineering with ML for heating system optimization.
-- **Study Guide**: 20-chapter technical reference covering German standards (DIN, VDI, GEG), ML for energy time series, and production MLOps
+Domain knowledge repository bridging energy engineering with ML for building optimization.
+- **Technical Reference**: German heating standards documentation (DIN, VDI, GEG), ML methodologies for energy time series, production MLOps patterns
 - **Heating Curve Simulator**: Interactive tool implementing DIN EN 12831, VDI 6030; real weather data from 8 German cities
-- Bridges the [60% skills gap](https://www.iea.org/news/energy-employment-has-surged-but-growing-skills-shortages-threaten-future-momentum) in energy sector data analytics
+- Addresses the [60% skills gap](https://www.iea.org/news/energy-employment-has-surged-but-growing-skills-shortages-threaten-future-momentum) in energy sector data analytics
 
 ### Customer Segmentation & CLV Analysis
 **[Repository](https://github.com/albertodiazdurana/TravelTide_Customer_Segmentation)**
