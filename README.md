@@ -17,13 +17,13 @@ This portfolio demonstrates:
 
 If you are reviewing this portfolio for **Senior ML Engineer / Research Engineer** roles, start here:
 
-| Project                                                                                 | Focus                            | Why It Matters                                                       |
-| --------------------------------------------------------------------------------------- | -------------------------------- | -------------------------------------------------------------------- |
+| Project                                                                                                  | Focus                            | Why It Matters                                                       |
+| -------------------------------------------------------------------------------------------------------- | -------------------------------- | -------------------------------------------------------------------- |
 | [RAG Document Assistant](https://github.com/albertodiazdurana/rag-document-assistant) *(In Development)* | RAG + Multi-Provider LLMs        | Production RAG with vector databases, FastAPI, and MLflow evaluation |
-| [DevFlow Analyzer](https://github.com/albertodiazdurana/devflow-analyzer)               | Agentic AI + Process Mining      | ML applied to code-adjacent artifacts (CI/CD logs, execution traces) |
-| [Demand Forecasting](https://github.com/albertodiazdurana/Demand-forecasting-in-retail) | End-to-End ML Pipeline           | Full lifecycle ownership at scale (4.8M records)                     |
-| [Computer Vision](https://github.com/albertodiazdurana/computer_vision)                 | Deep Learning + Interpretability | Applied DL with evaluation rigor and explainability                  |
-| [NLP Topic Modeling](https://github.com/albertodiazdurana/nlp-topic-modeling)           | NLP + Sequential Data            | Pre-LLM innovation combining NLP with event-based data               |
+| [DevFlow Analyzer](https://github.com/albertodiazdurana/devflow-analyzer)                                | Agentic AI + Process Mining      | ML applied to code-adjacent artifacts (CI/CD logs, execution traces) |
+| [Demand Forecasting](https://github.com/albertodiazdurana/Demand-forecasting-in-retail)                  | End-to-End ML Pipeline           | Full lifecycle ownership at scale (4.8M records)                     |
+| [Computer Vision](https://github.com/albertodiazdurana/computer_vision)                                  | Deep Learning + Interpretability | Applied DL with evaluation rigor and explainability                  |
+| [NLP Topic Modeling](https://github.com/albertodiazdurana/nlp-topic-modeling)                            | NLP + Sequential Data            | Pre-LLM innovation combining NLP with event-based data               |
 
 These projects best reflect how I approach ML system design, experimentation, and deployment.
 
@@ -80,7 +80,7 @@ End-to-end time series forecasting pipeline for inventory optimization.
 ---
 
 ### Computer Vision for Manufacturing Quality Control
-**[Repository](https://github.com/albertodiazdurana/computer_vision)** | **[Live App](https://computer-vision-steel-defect-segmentation.streamlit.app/)** | TensorFlow, MLflow, Streamlit
+**[Repository](https://github.com/albertodiazdurana/computer_vision)** | **[Live App](https://steel-defect-segmentation.streamlit.app/)** | TensorFlow, MLflow, Streamlit
 
 Deep learning projects for industrial quality inspection and defect detection.
 
