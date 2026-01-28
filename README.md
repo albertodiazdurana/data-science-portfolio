@@ -115,6 +115,21 @@ Unsupervised text analysis converting Jira comments into structured attributes f
 
 ---
 
+### Disaster Tweet Classification — From TF-IDF to Transformers
+**[Repository](https://github.com/albertodiazdurana/tfidf-to-transformers-with-disaster-tweets)** | Sentence Transformers, GloVe, FastText, scikit-learn
+
+Comparative study of NLP evolution through binary classification of disaster-related tweets.
+
+- **Problem**: Distinguish contextual meaning in tweets (e.g., "fire" as emergency vs. slang)
+- **Methods**: Progressive comparison of TF-IDF → Word Embeddings (GloVe, FastText) → Sentence Transformers (SBERT)
+- **Results**: Sentence Transformers achieved F1: 0.770; tuned TF-IDF reached 0.764
+- **Key Insight**: "Averaging destroys information"; document-level embeddings via mean pooling lose semantic nuance
+- **Scale**: 7,613 labeled tweets from Kaggle NLP competition
+
+**Why it matters**: Demonstrates understanding of NLP technique evolution and trade-offs; contextual embeddings outperform statistical methods for ambiguous text.
+
+---
+
 ## Additional Projects
 
 ### Data Science for Residential Energy Systems
@@ -154,7 +169,7 @@ XGBoost regression for 28-day compressive strength from XRD/XRF/PSD measurements
 | **ML Systems from Scratch**      | Design → deployment → monitoring across all featured projects |
 | **Reproducible Experimentation** | MLflow tracking, CI/CD, pytest coverage                       |
 | **Agentic AI & LLM Integration** | DevFlow Analyzer, multi-provider LLM support                  |
-| **NLP & Unstructured Data**      | Topic modeling, sentiment analysis, text-to-structure         |
+| **NLP & Unstructured Data**      | Topic modeling, text classification, TF-IDF to Transformers   |
 | **Sequential & Workflow Data**   | Process mining, CI/CD logs, event traces                      |
 | **Production-Grade Engineering** | Streamlit apps, API integration, Windows deployment           |
 
@@ -166,7 +181,7 @@ XGBoost regression for 28-day compressive strength from XRD/XRF/PSD measurements
 
 **ML & Data Science**: TensorFlow | XGBoost | scikit-learn | statsmodels | Prophet | SHAP | SMOTE
 
-**NLP & Deep Learning**: LangChain | LangGraph | NLTK | Gensim | U-Net | ResNet | Autoencoders | Transfer Learning
+**NLP & Deep Learning**: LangChain | LangGraph | Sentence Transformers | NLTK | Gensim | U-Net | ResNet | Autoencoders | Transfer Learning
 
 **Data Engineering & MLOps**: Spark | Polars | Dask | MLflow | FastAPI | AWS | Argo Workflows
 
