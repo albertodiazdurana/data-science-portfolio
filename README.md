@@ -1,9 +1,9 @@
 # Machine Learning Systems & Agentic AI Portfolio
 
 **Alberto Diaz-Durana**
-Senior Data Scientist / ML Engineer | 10+ Years Experience | Production ML & Applied Research
+Senior Data Scientist | NLP & Process Mining | 10+ Years Experience
 
-Senior ML practitioner with a decade of international experience building end-to-end machine learning systems, from research prototyping to production deployment. My work focuses on **ML systems design**, **NLP**, **agentic AI**, and **process mining**, with strong emphasis on reproducibility, evaluation, and real-world impact.
+Senior Data Scientist with 10+ years building production ML systems from scratch. End-to-end ML pipelines serving 35+ B2B customers (Alcemy). Expertise in NLP (topic modeling, text analysis, LLM agents), process mining, and MLOps. Currently specializing in agentic AI and LLM integration. Proven ability to design ML systems, establish reproducible experiments, and deliver measurable business impact.
 
 This portfolio demonstrates:
 - Designing ML systems from scratch
@@ -20,13 +20,19 @@ If you are reviewing this portfolio for **Senior ML Engineer / Research Engineer
 | Project                                                                                                  | Focus                            | Why It Matters                                                       |
 | -------------------------------------------------------------------------------------------------------- | -------------------------------- | -------------------------------------------------------------------- |
 | [SQL Query Agent](https://github.com/albertodiazdurana/sql-query-agent-ollama)                           | Agentic AI + Local LLMs          | 5-node LangGraph agent; 14-query eval; systematic model comparison   |
-| [DSM Graph Explorer](https://github.com/albertodiazdurana/dsm-graph-explorer)                            | Documentation Integrity + Graphs | Cross-reference validation; 52 tests, 98% coverage                   |
+| [DSM Graph Explorer](https://github.com/albertodiazdurana/dsm-graph-explorer)                            | Documentation Integrity + Graphs | Cross-reference validation; 145 tests, ~98% coverage                 |
 | [DS Methodology](https://github.com/albertodiazdurana/agentic-ai-data-science-methodology)               | AI-Agent Collaboration Framework | Structured workflows for data science projects with AI agents        |
 | [RAG Document Assistant](https://github.com/albertodiazdurana/rag-document-assistant) *(In Development)* | RAG + Multi-Provider LLMs        | Production RAG with vector databases, FastAPI, and MLflow evaluation  |
 | [DevFlow Analyzer](https://github.com/albertodiazdurana/devflow-analyzer)                                | Agentic AI + Process Mining      | ML applied to code-adjacent artifacts (CI/CD logs, execution traces) |
 | [Disaster Tweet Classification](https://github.com/albertodiazdurana/tfidf-to-transformers-with-disaster-tweets) | NLP Technique Comparison  | TF-IDF → Embeddings → Transformers; F1: 0.77                        |
 
 These projects best reflect how I approach ML system design, experimentation, and deployment.
+
+---
+
+## How These Projects Connect
+
+The top three projects form a single system developed in parallel. The [DS Methodology](https://github.com/albertodiazdurana/agentic-ai-data-science-methodology) (DSM) defines structured workflows for running data science and software engineering projects with AI agents. The [SQL Query Agent](https://github.com/albertodiazdurana/sql-query-agent-ollama) is a case study built using DSM; it follows DSM's sprint planning, decision logging (DEC-001 through DEC-005), hypothesis-driven experiments, and limitation registries, feeding observations back to DSM through dedicated feedback files. The [DSM Graph Explorer](https://github.com/albertodiazdurana/dsm-graph-explorer) is a dog-fooding project; it uses DSM 4.0 to build tooling that validates the methodology's own documentation integrity across ~7,800 lines of cross-referenced markdown. Both projects create a continuous improvement loop: DSM provides structure, the case studies stress-test it, and their feedback refines the next version.
 
 ---
 
@@ -57,10 +63,11 @@ Repository integrity validator and graph database explorer for the DSM framework
 
 - **Problem**: Large documentation repositories with cross-references break silently as they grow
 - **Approach**: Markdown parser extracts hierarchical sections; cross-reference extractor identifies Section X.Y.Z, Appendix, and DSM patterns
-- **Features**: Code block awareness (skips fenced blocks), line tracking for precise error reporting
-- **Quality**: 52 unit tests, 98% coverage
+- **Features**: Code block awareness (skips fenced blocks), line tracking for precise error reporting, severity levels, recursive directory scanning, strict mode for CI/CD
+- **Quality**: 145 tests, ~98% coverage (Sprint 3)
+- **Status**: Parser → Validation engine → CLI implemented; real-world validation run on DSM docs
 
-**Why it matters**: Practical software engineering applied to documentation maintenance; demonstrates testing discipline and graph-based analysis.
+**Why it matters**: Practical software engineering applied to documentation maintenance; demonstrates testing discipline, dog-fooding, and graph-based analysis.
 
 ---
 
@@ -188,7 +195,7 @@ XGBoost regression for 28-day compressive strength from XRD/XRF/PSD measurements
 | -------------------------------- | ------------------------------------------------------------- |
 | **ML Systems from Scratch**      | Design → deployment → monitoring across all featured projects |
 | **Reproducible Experimentation** | MLflow tracking, CI/CD, pytest coverage                       |
-| **Agentic AI & LLM Integration** | DevFlow Analyzer, multi-provider LLM support                  |
+| **Agentic AI & LLM Integration** | SQL Query Agent, DevFlow Analyzer, RAG, multi-provider LLMs  |
 | **NLP & Unstructured Data**      | Topic modeling, text classification, TF-IDF to Transformers   |
 | **Sequential & Workflow Data**   | Process mining, CI/CD logs, event traces                      |
 | **Production-Grade Engineering** | Streamlit apps, API integration, Windows deployment           |
@@ -197,17 +204,17 @@ XGBoost regression for 28-day compressive strength from XRD/XRF/PSD measurements
 
 ## Technical Skills
 
-**Languages & Core Tools**: Python | SQL | Git | Jupyter
+**Languages & Core Tools**: Python | SQL | Git | Jupyter | pytest
 
-**ML & Data Science**: TensorFlow | XGBoost | scikit-learn | statsmodels | Prophet | SHAP | SMOTE
+**Agentic AI & NLP**: LangChain | LangGraph | Ollama | ChromaDB | Sentence Transformers | NLTK | Gensim | RAG
 
-**NLP & Deep Learning**: LangChain | LangGraph | Sentence Transformers | NLTK | Gensim | U-Net | ResNet | Autoencoders | Transfer Learning
+**ML & Data Science**: scikit-learn | XGBoost | TensorFlow | MLflow | SHAP
 
-**Data Engineering & MLOps**: Spark | Polars | Dask | MLflow | FastAPI | AWS | Argo Workflows
+**Data Engineering & MLOps**: Spark | Polars | FastAPI | AWS | Docker | Argo Workflows | SQLite | PostgreSQL
 
-**Visualization & BI**: Streamlit | Plotly | Power BI | Matplotlib | Seaborn | Dash
+**Visualization & BI**: Streamlit | Plotly | Power BI | Matplotlib | Seaborn
 
-**Specialized**: Process Mining (PM4Py) | Time Series Forecasting | LLM Integration | RAG | Energy Systems (German DIN/VDI/GEG standards)
+**Specialized**: Process Mining (PM4Py) | LLM Evaluation | Time Series Forecasting | Energy Systems (German DIN/VDI/GEG standards)
 
 ---
 
@@ -222,7 +229,7 @@ XGBoost regression for 28-day compressive strength from XRD/XRF/PSD measurements
 
 ## EDUCATION & CERTIFICATIONS
 
-**AI Data Science Program** (LLM, RAG, Agentic AI) – Masterschool | Apr 2025 - May 2026
+**AI Data Science Program** (LLM, RAG, Agentic AI) – Masterschool | since 09.2025
 Specialization in LLM integration, RAG systems, prompt engineering. LangChain, vector databases, embedding techniques.
 
 **MSc Process, Energy & Environmental Systems Engineering** – TU Berlin | 2010-2013
