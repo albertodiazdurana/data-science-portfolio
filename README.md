@@ -19,11 +19,12 @@ If you are reviewing this portfolio for **Senior ML Engineer / Research Engineer
 
 | Project                                                                                                  | Focus                            | Why It Matters                                                       |
 | -------------------------------------------------------------------------------------------------------- | -------------------------------- | -------------------------------------------------------------------- |
+| [SQL Query Agent](https://github.com/albertodiazdurana/sql-query-agent-ollama)                           | Agentic AI + Local LLMs          | 5-node LangGraph agent; 14-query eval; systematic model comparison   |
+| [DSM Graph Explorer](https://github.com/albertodiazdurana/dsm-graph-explorer)                            | Documentation Integrity + Graphs | Cross-reference validation; 52 tests, 98% coverage                   |
+| [DS Methodology](https://github.com/albertodiazdurana/agentic-ai-data-science-methodology)               | AI-Agent Collaboration Framework | Structured workflows for data science projects with AI agents        |
 | [RAG Document Assistant](https://github.com/albertodiazdurana/rag-document-assistant) *(In Development)* | RAG + Multi-Provider LLMs        | Production RAG with vector databases, FastAPI, and MLflow evaluation  |
 | [DevFlow Analyzer](https://github.com/albertodiazdurana/devflow-analyzer)                                | Agentic AI + Process Mining      | ML applied to code-adjacent artifacts (CI/CD logs, execution traces) |
-| [SQL Query Agent](https://github.com/albertodiazdurana/sql-query-agent-ollama)                           | Agentic AI + Local LLMs          | Self-correcting LangGraph agent; natural language to SQL              |
 | [Disaster Tweet Classification](https://github.com/albertodiazdurana/tfidf-to-transformers-with-disaster-tweets) | NLP Technique Comparison  | TF-IDF → Embeddings → Transformers; F1: 0.77                        |
-| [DS Methodology](https://github.com/albertodiazdurana/agentic-ai-data-science-methodology)               | AI-Agent Collaboration Framework | Structured workflows for data science projects with AI agents        |
 
 These projects best reflect how I approach ML system design, experimentation, and deployment.
 
@@ -31,20 +32,49 @@ These projects best reflect how I approach ML system design, experimentation, an
 
 ## Featured Projects
 
-### DevFlow Analyzer — Agentic AI for CI/CD & Developer Workflows
-**[Repository](https://github.com/albertodiazdurana/devflow-analyzer)** | **[Live App](https://devflow-analyzer.streamlit.app/)** | LangChain, LangGraph, PM4Py, MLflow, Streamlit
+### SQL Query Agent — Natural Language to SQL with Local LLMs
+**[Repository](https://github.com/albertodiazdurana/sql-query-agent-ollama)** | LangChain, LangGraph, Ollama, SQLGlot
 
-An agentic ML system that analyzes CI/CD build data through process mining, identifies operational bottlenecks and failure patterns, and generates actionable insights using LLM-powered natural language generation.
+A text-to-code generation testbed; self-correcting agentic system that converts natural language to SQL, running entirely on local open-source models via Ollama.
 
-- **Problem**: CI/CD pipelines generate massive logs but lack actionable insights for developers
-- **Approach**: ReAct-style agent with tool suite (summary stats, bottleneck detection, failure analysis, project comparison); generates DFG visualizations showing build status transitions
-- **Scale**: 10,000+ CI/CD builds across 21 open-source Java projects (TravisTorrent dataset)
-- **Evaluation**: MLflow experiment tracking, ROUGE scoring, A/B testing framework, cost monitoring
-- **Quality**: 86 pytest tests; automated response metrics (tokens/sec, actionability scoring)
-- **Cost Efficiency**: GPT-4o-mini primary ($0.15/1M input tokens); GPT-4o for advanced analysis
-- **Architecture**: Modular design (process_analyzer, llm_provider, agent, evaluation); 30 commits, 6-day build cycle
+- **Problem**: Enable non-technical users to query databases using plain English; use SQL's constrained nature to systematically evaluate LLM code generation
+- **Approach**: Five-node LangGraph state machine informed by DIN-SQL, MAC-SQL, CHESS research: schema filtering → SQL generation → validation (SQLGlot) → execution → error handling with contextual feedback (up to 3 retries)
+- **Architecture**: Schema-aware generation, SQL post-processing for dialect normalization, pre-execution validation, self-correction loops, model-aware prompting
+- **Evaluation (EXP-001)**: 14-query test suite (5 Easy, 5 Medium, 4 Hard); 2-model comparison (sqlcoder:7b vs llama3.1:8b) with standardized metrics across 6 dimensions (execution accuracy, raw/effective parsability, hallucination rate, latency, error categorization)
+- **Results**: 42.9% execution accuracy (both models); llama3.1:8b: 100% parsability, 92.9% effective parsability, zero hallucination, 17.6s avg latency (1.7x faster)
+- **Key Finding**: SQL fine-tuning did not improve accuracy at 7-8B scale (H1 rejected); llama3.1:8b failures are predominantly logic errors (predictable, addressable), while sqlcoder:7b failures are diverse (hallucination, runtime, dialect)
+- **Error Analysis**: 6-tier error hierarchy (schema linking → syntax → dialect → hallucination → logic → unknown); 6 structured limitations (LIM-001 through LIM-006) feeding Sprint 2 backlog
+- **Reproducibility**: Reusable model-agnostic evaluation harness producing JSON results with per-query metrics
 
-**Why it matters**: Demonstrates how agentic AI + structured workflow data can augment developer productivity—an approach closely aligned with **ML for developer tools and code-adjacent intelligence**.
+**Why it matters**: Demonstrates agentic AI design with self-correction loops, hypothesis-driven model evaluation, local LLM execution (no API keys), and production patterns for tool-using agents.
+
+---
+
+### DSM Graph Explorer — Documentation Integrity Validator
+**[Repository](https://github.com/albertodiazdurana/dsm-graph-explorer)** | Python, pytest, Neo4j, NetworkX
+
+Repository integrity validator and graph database explorer for the DSM framework.
+
+- **Problem**: Large documentation repositories with cross-references break silently as they grow
+- **Approach**: Markdown parser extracts hierarchical sections; cross-reference extractor identifies Section X.Y.Z, Appendix, and DSM patterns
+- **Features**: Code block awareness (skips fenced blocks), line tracking for precise error reporting
+- **Quality**: 52 unit tests, 98% coverage
+
+**Why it matters**: Practical software engineering applied to documentation maintenance; demonstrates testing discipline and graph-based analysis.
+
+---
+
+### Agentic AI Data Science Methodology (DSM)
+**[Repository](https://github.com/albertodiazdurana/agentic-ai-data-science-methodology)** | Python, Jupyter, Markdown
+
+A comprehensive framework for managing data science and ML projects collaboratively with AI agents.
+
+- **Dual-Track Architecture**: Separate pathways for data science (notebooks) and software engineering (applications)
+- **4-Phase Execution**: Exploration → Features → Analysis → Communication
+- **Standardized Templates**: ~400-line notebook templates, decision logging, quality assurance standards
+- **Battle-Tested**: Applied across customer segmentation, demand forecasting, computer vision, NLP, RAG, and industrial ML projects
+
+**Why it matters**: Codifies structured AI-agent collaboration workflows; addresses the gap between ad-hoc LLM usage and reproducible, professional-grade project delivery.
 
 ---
 
@@ -64,18 +94,20 @@ A document Q&A system that reads your files (PDF, Markdown, TXT), understands th
 
 ---
 
-### SQL Query Agent — Natural Language to SQL with Local LLMs
-**[Repository](https://github.com/albertodiazdurana/sql-query-agent-ollama)** | LangChain, LangGraph, Ollama, SQLGlot
+### DevFlow Analyzer — Agentic AI for CI/CD & Developer Workflows
+**[Repository](https://github.com/albertodiazdurana/devflow-analyzer)** | **[Live App](https://devflow-analyzer.streamlit.app/)** | LangChain, LangGraph, PM4Py, MLflow, Streamlit
 
-A self-correcting agentic system that converts natural language questions into SQL queries, running entirely on local open-source models via Ollama.
+An agentic ML system that analyzes CI/CD build data through process mining, identifies operational bottlenecks and failure patterns, and generates actionable insights using LLM-powered natural language generation.
 
-- **Problem**: Enable non-technical users to query databases using plain English
-- **Approach**: LangGraph state machine with schema filtering → SQL generation → validation → execution → error handling (up to 3 retries)
-- **Architecture**: Schema-aware generation, SQLGlot validation before database execution, structured graphs optimized for 7B local models
-- **Models**: sqlcoder:7b, defog-llama3-sqlcoder-8b, llama3.1:8b baseline comparison
-- **Evaluation**: Standardized metrics for systematic model comparison
+- **Problem**: CI/CD pipelines generate massive logs but lack actionable insights for developers
+- **Approach**: ReAct-style agent with tool suite (summary stats, bottleneck detection, failure analysis, project comparison); generates DFG visualizations showing build status transitions
+- **Scale**: 10,000+ CI/CD builds across 21 open-source Java projects (TravisTorrent dataset)
+- **Evaluation**: MLflow experiment tracking, ROUGE scoring, A/B testing framework, cost monitoring
+- **Quality**: 86 pytest tests; automated response metrics (tokens/sec, actionability scoring)
+- **Cost Efficiency**: GPT-4o-mini primary ($0.15/1M input tokens); GPT-4o for advanced analysis
+- **Architecture**: Modular design (process_analyzer, llm_provider, agent, evaluation); 30 commits, 6-day build cycle
 
-**Why it matters**: Demonstrates agentic AI design with self-correction loops, local LLM execution (no API keys), and production patterns for tool-using agents.
+**Why it matters**: Demonstrates how agentic AI + structured workflow data can augment developer productivity—an approach closely aligned with **ML for developer tools and code-adjacent intelligence**.
 
 ---
 
@@ -105,34 +137,6 @@ Comparative study of NLP evolution through binary classification of disaster-rel
 - **Scale**: 7,613 labeled tweets from Kaggle NLP competition
 
 **Why it matters**: Demonstrates understanding of NLP technique evolution and trade-offs; contextual embeddings outperform statistical methods for ambiguous text.
-
----
-
-### Agentic AI Data Science Methodology (DSM)
-**[Repository](https://github.com/albertodiazdurana/agentic-ai-data-science-methodology)** | Python, Jupyter, Markdown
-
-A comprehensive framework for managing data science and ML projects collaboratively with AI agents.
-
-- **Dual-Track Architecture**: Separate pathways for data science (notebooks) and software engineering (applications)
-- **4-Phase Execution**: Exploration → Features → Analysis → Communication
-- **Standardized Templates**: ~400-line notebook templates, decision logging, quality assurance standards
-- **Battle-Tested**: Applied across customer segmentation, demand forecasting, computer vision, NLP, RAG, and industrial ML projects
-
-**Why it matters**: Codifies structured AI-agent collaboration workflows; addresses the gap between ad-hoc LLM usage and reproducible, professional-grade project delivery.
-
----
-
-### DSM Graph Explorer — Documentation Integrity Validator
-**[Repository](https://github.com/albertodiazdurana/dsm-graph-explorer)** | Python, pytest, Neo4j, NetworkX
-
-Repository integrity validator and graph database explorer for the DSM framework.
-
-- **Problem**: Large documentation repositories with cross-references break silently as they grow
-- **Approach**: Markdown parser extracts hierarchical sections; cross-reference extractor identifies Section X.Y.Z, Appendix, and DSM patterns
-- **Features**: Code block awareness (skips fenced blocks), line tracking for precise error reporting
-- **Quality**: 52 unit tests, 98% coverage
-
-**Why it matters**: Practical software engineering applied to documentation maintenance; demonstrates testing discipline and graph-based analysis.
 
 ---
 
