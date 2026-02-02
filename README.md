@@ -19,11 +19,11 @@ If you are reviewing this portfolio for **Senior ML Engineer / Research Engineer
 
 | Project                                                                                                  | Focus                            | Why It Matters                                                       |
 | -------------------------------------------------------------------------------------------------------- | -------------------------------- | -------------------------------------------------------------------- |
-| [RAG Document Assistant](https://github.com/albertodiazdurana/rag-document-assistant) *(In Development)* | RAG + Multi-Provider LLMs        | Production RAG with vector databases, FastAPI, and MLflow evaluation |
+| [RAG Document Assistant](https://github.com/albertodiazdurana/rag-document-assistant) *(In Development)* | RAG + Multi-Provider LLMs        | Production RAG with vector databases, FastAPI, and MLflow evaluation  |
 | [DevFlow Analyzer](https://github.com/albertodiazdurana/devflow-analyzer)                                | Agentic AI + Process Mining      | ML applied to code-adjacent artifacts (CI/CD logs, execution traces) |
-| [Demand Forecasting](https://github.com/albertodiazdurana/Demand-forecasting-in-retail)                  | End-to-End ML Pipeline           | Full lifecycle ownership at scale (4.8M records)                     |
-| [Computer Vision](https://github.com/albertodiazdurana/computer_vision)                                  | Deep Learning + Interpretability | Applied DL with evaluation rigor and explainability                  |
-| [NLP Topic Modeling](https://github.com/albertodiazdurana/nlp-topic-modeling)                            | NLP + Sequential Data            | Pre-LLM innovation combining NLP with event-based data               |
+| [SQL Query Agent](https://github.com/albertodiazdurana/sql-query-agent-ollama)                           | Agentic AI + Local LLMs          | Self-correcting LangGraph agent; natural language to SQL              |
+| [Disaster Tweet Classification](https://github.com/albertodiazdurana/tfidf-to-transformers-with-disaster-tweets) | NLP Technique Comparison  | TF-IDF → Embeddings → Transformers; F1: 0.77                        |
+| [DS Methodology](https://github.com/albertodiazdurana/agentic-ai-data-science-methodology)               | AI-Agent Collaboration Framework | Structured workflows for data science projects with AI agents        |
 
 These projects best reflect how I approach ML system design, experimentation, and deployment.
 
@@ -64,40 +64,18 @@ A document Q&A system that reads your files (PDF, Markdown, TXT), understands th
 
 ---
 
-### Demand Forecasting System — Production ML at Scale
-**[Repository](https://github.com/albertodiazdurana/Demand-forecasting-in-retail)** | **[Live App](https://demand-forecasting-in-retail-app.streamlit.app/)** | XGBoost, LSTM, MLflow, Streamlit
+### SQL Query Agent — Natural Language to SQL with Local LLMs
+**[Repository](https://github.com/albertodiazdurana/sql-query-agent-ollama)** | LangChain, LangGraph, Ollama, SQLGlot
 
-End-to-end time series forecasting pipeline for inventory optimization.
+A self-correcting agentic system that converts natural language questions into SQL queries, running entirely on local open-source models via Ollama.
 
-- **Problem**: Predict daily sales across 2,638 items and 10 stores
-- **Scale**: 4.8M transactions; 33 engineered features after ablation studies
-- **Hypothesis Tested**: Temporal consistency vs data volume—seasonally aligned training outperformed 7x larger dataset by 54%
-- **Results**: RMSE 6.40 (11% improvement); XGBoost won at scale, LSTM won on sample
-- **Quality**: 16 MLflow runs, 24 pytest tests, production-hardened codebase
+- **Problem**: Enable non-technical users to query databases using plain English
+- **Approach**: LangGraph state machine with schema filtering → SQL generation → validation → execution → error handling (up to 3 retries)
+- **Architecture**: Schema-aware generation, SQLGlot validation before database execution, structured graphs optimized for 7B local models
+- **Models**: sqlcoder:7b, defog-llama3-sqlcoder-8b, llama3.1:8b baseline comparison
+- **Evaluation**: Standardized metrics for systematic model comparison
 
-**Why it matters**: Full ML lifecycle ownership from data ingestion to user-facing delivery.
-
----
-
-### Computer Vision for Manufacturing Quality Control
-**[Repository](https://github.com/albertodiazdurana/computer_vision)** | **[Live App](https://steel-defect-segmentation.streamlit.app/)** | TensorFlow, MLflow, Streamlit
-
-Deep learning projects for industrial quality inspection and defect detection.
-
-**Casting Defect Detection** (Anomaly Detection)
-- Convolutional autoencoder trained on non-defective samples only; no labeled defect data required
-- ROC-AUC: 0.869, 91% defect precision
-- Grad-CAM visualizations for model interpretability
-
-**Steel Defect Segmentation** (Semantic Segmentation)
-- U-Net (487K parameters) on Severstal Steel dataset (4,000 images)
-- Dice: 0.42, IoU: 0.28; handles severely imbalanced data (~3% defect pixels)
-- Combined BCE + Dice loss for class imbalance
-
-**CIFAR-10 Classification** (Transfer Learning)
-- ResNet50 backbone with custom head; fine-tuning provided 4.7× improvement over frozen features
-
-**Why it matters**: Applied deep learning with evaluation rigor and explainability, not just model training.
+**Why it matters**: Demonstrates agentic AI design with self-correction loops, local LLM execution (no API keys), and production patterns for tool-using agents.
 
 ---
 
@@ -130,6 +108,34 @@ Comparative study of NLP evolution through binary classification of disaster-rel
 
 ---
 
+### Agentic AI Data Science Methodology (DSM)
+**[Repository](https://github.com/albertodiazdurana/agentic-ai-data-science-methodology)** | Python, Jupyter, Markdown
+
+A comprehensive framework for managing data science and ML projects collaboratively with AI agents.
+
+- **Dual-Track Architecture**: Separate pathways for data science (notebooks) and software engineering (applications)
+- **4-Phase Execution**: Exploration → Features → Analysis → Communication
+- **Standardized Templates**: ~400-line notebook templates, decision logging, quality assurance standards
+- **Battle-Tested**: Applied across customer segmentation, demand forecasting, computer vision, NLP, RAG, and industrial ML projects
+
+**Why it matters**: Codifies structured AI-agent collaboration workflows; addresses the gap between ad-hoc LLM usage and reproducible, professional-grade project delivery.
+
+---
+
+### DSM Graph Explorer — Documentation Integrity Validator
+**[Repository](https://github.com/albertodiazdurana/dsm-graph-explorer)** | Python, pytest, Neo4j, NetworkX
+
+Repository integrity validator and graph database explorer for the DSM framework.
+
+- **Problem**: Large documentation repositories with cross-references break silently as they grow
+- **Approach**: Markdown parser extracts hierarchical sections; cross-reference extractor identifies Section X.Y.Z, Appendix, and DSM patterns
+- **Features**: Code block awareness (skips fenced blocks), line tracking for precise error reporting
+- **Quality**: 52 unit tests, 98% coverage
+
+**Why it matters**: Practical software engineering applied to documentation maintenance; demonstrates testing discipline and graph-based analysis.
+
+---
+
 ## Additional Projects
 
 ### Data Science for Residential Energy Systems
@@ -139,6 +145,16 @@ Domain knowledge repository bridging energy engineering with ML for building opt
 - **Technical Reference**: German heating standards documentation (DIN, VDI, GEG), ML methodologies for energy time series, production MLOps patterns
 - **Heating Curve Simulator**: Interactive tool implementing DIN EN 12831, VDI 6030; real weather data from 8 German cities
 - Addresses the [60% skills gap](https://www.iea.org/news/energy-employment-has-surged-but-growing-skills-shortages-threaten-future-momentum) in energy sector data analytics
+
+### Demand Forecasting System
+**[Repository](https://github.com/albertodiazdurana/Demand-forecasting-in-retail)** | **[Live App](https://demand-forecasting-in-retail-app.streamlit.app/)**
+
+End-to-end time series forecasting: 4.8M transactions, 33 features, RMSE 6.40 (11% improvement). XGBoost, LSTM, MLflow.
+
+### Computer Vision for Manufacturing Quality Control
+**[Repository](https://github.com/albertodiazdurana/computer_vision)** | **[Live App](https://steel-defect-segmentation.streamlit.app/)**
+
+Industrial defect detection: U-Net segmentation, autoencoder anomaly detection (ROC-AUC: 0.869), ResNet transfer learning. TensorFlow, MLflow.
 
 ### Customer Segmentation & CLV Analysis
 **[Repository](https://github.com/albertodiazdurana/TravelTide_Customer_Segmentation)**
