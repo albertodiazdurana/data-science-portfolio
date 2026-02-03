@@ -19,7 +19,7 @@ If you are reviewing this portfolio for **Senior ML Engineer / Research Engineer
 
 | Project                                                                                                  | Focus                            | Why It Matters                                                       |
 | -------------------------------------------------------------------------------------------------------- | -------------------------------- | -------------------------------------------------------------------- |
-| [SQL Query Agent](https://github.com/albertodiazdurana/sql-query-agent-ollama)                           | Agentic AI + Local LLMs          | 5-node LangGraph agent; 14-query eval; systematic model comparison   |
+| [SQL Query Agent](https://github.com/albertodiazdurana/sql-query-agent-ollama)                           | Agentic AI + Local LLMs          | 84-experiment ablation study; Streamlit UI; Docker deployment        |
 | [DSM Graph Explorer](https://github.com/albertodiazdurana/dsm-graph-explorer)                            | Documentation Integrity + Graphs | Cross-reference validation; 145 tests, ~98% coverage                 |
 | [DS Methodology](https://github.com/albertodiazdurana/agentic-ai-data-science-methodology)               | AI-Agent Collaboration Framework | Structured workflows for data science projects with AI agents        |
 | [RAG Document Assistant](https://github.com/albertodiazdurana/rag-document-assistant) *(In Development)* | RAG + Multi-Provider LLMs        | Production RAG with vector databases, FastAPI, and MLflow evaluation  |
@@ -39,20 +39,19 @@ The top three projects form a single system developed in parallel. The [DS Metho
 ## Featured Projects
 
 ### SQL Query Agent — Natural Language to SQL with Local LLMs
-**[Repository](https://github.com/albertodiazdurana/sql-query-agent-ollama)** | LangChain, LangGraph, Ollama, SQLGlot
+**[Repository](https://github.com/albertodiazdurana/sql-query-agent-ollama)** | LangChain, LangGraph, Ollama, SQLGlot, Streamlit, Docker
 
 A text-to-code generation testbed; self-correcting agentic system that converts natural language to SQL, running entirely on local open-source models via Ollama.
 
 - **Problem**: Enable non-technical users to query databases using plain English; use SQL's constrained nature to systematically evaluate LLM code generation
-- **Approach**: Five-node LangGraph state machine informed by DIN-SQL, MAC-SQL, CHESS research: schema filtering → SQL generation → validation (SQLGlot) → execution → error handling with contextual feedback (up to 3 retries)
+- **Approach**: Five-node LangGraph state machine informed by DIN-SQL, MAC-SQL, CHESS research: schema filtering → SQL generation → post-processing → validation (SQLGlot) → execution → error handling (up to 3 retries)
 - **Architecture**: Schema-aware generation, SQL post-processing for dialect normalization, pre-execution validation, self-correction loops, model-aware prompting
-- **Evaluation (EXP-001)**: 14-query test suite (5 Easy, 5 Medium, 4 Hard); 2-model comparison (sqlcoder:7b vs llama3.1:8b) with standardized metrics across 6 dimensions (execution accuracy, raw/effective parsability, hallucination rate, latency, error categorization)
-- **Results**: 42.9% execution accuracy (both models); llama3.1:8b: 100% parsability, 92.9% effective parsability, zero hallucination, 17.6s avg latency (1.7x faster)
-- **Key Finding**: SQL fine-tuning did not improve accuracy at 7-8B scale (H1 rejected); llama3.1:8b failures are predominantly logic errors (predictable, addressable), while sqlcoder:7b failures are diverse (hallucination, runtime, dialect)
-- **Error Analysis**: 6-tier error hierarchy (schema linking → syntax → dialect → hallucination → logic → unknown); 6 structured limitations (LIM-001 through LIM-006) feeding Sprint 2 backlog
-- **Reproducibility**: Reusable model-agnostic evaluation harness producing JSON results with per-query metrics
+- **EXP-001 (Model Comparison)**: 14-query test suite (5 Easy, 5 Medium, 4 Hard); sqlcoder:7b vs llama3.1:8b across 6 metrics. Key finding: SQL fine-tuning did not improve accuracy at 7-8B scale (H1 rejected); llama3.1:8b recommended (100% parsability, zero hallucination, 1.7x faster)
+- **EXP-002 (Ablation Study)**: 84 experiments (6 prompt configurations × 14 queries). Counter-intuitive findings: few-shot examples *hurt* performance (−14pp); chain-of-thought degraded accuracy; zero-shot with full schema achieved best results (50%)
+- **Production**: Streamlit UI with schema explorer, 33 pytest tests, Docker deployment
+- **Documentation**: 5 decision records, 6 structured limitations, 4 blog articles (3 published, 1 in progress)
 
-**Why it matters**: Demonstrates agentic AI design with self-correction loops, hypothesis-driven model evaluation, local LLM execution (no API keys), and production patterns for tool-using agents.
+**Why it matters**: Demonstrates agentic AI design with self-correction loops, hypothesis-driven evaluation, counter-intuitive prompt engineering findings, and local-first production deployment.
 
 ---
 
