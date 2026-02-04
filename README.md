@@ -1,6 +1,6 @@
 # Machine Learning Systems & Agentic AI Portfolio
 
-**Alberto Diaz-Durana** 👋
+**Alberto Diaz-Durana**
 Senior Data Scientist | NLP & Process Mining | 10+ Years Experience
 
 Senior Data Scientist with 10+ years building production ML systems from scratch. End-to-end ML pipelines serving 35+ B2B customers (Alcemy). Expertise in NLP (topic modeling, text analysis, LLM agents), process mining, and MLOps. Currently specializing in agentic AI and LLM integration. Proven ability to design ML systems, establish reproducible experiments, and deliver measurable business impact.
@@ -17,14 +17,14 @@ This portfolio demonstrates:
 
 If you are reviewing this portfolio for **Senior ML Engineer / Research Engineer** roles, start here:
 
-| Project                                                                                                  | Focus                            | Why It Matters                                                       |
-| -------------------------------------------------------------------------------------------------------- | -------------------------------- | -------------------------------------------------------------------- |
-| [SQL Query Agent](https://github.com/albertodiazdurana/sql-query-agent-ollama)                           | Agentic AI + Local LLMs          | 84-experiment ablation study; Streamlit UI; Docker deployment        |
-| [DSM Graph Explorer](https://github.com/albertodiazdurana/dsm-graph-explorer)                            | Documentation Integrity + Graphs | Epoch 1 complete; 150 tests, 98% coverage; CLI ready                 |
-| [DS Methodology](https://github.com/albertodiazdurana/agentic-ai-data-science-methodology)               | AI-Agent Collaboration Framework | Structured workflows for data science projects with AI agents        |
-| [RAG Document Assistant](https://github.com/albertodiazdurana/rag-document-assistant) *(On Ice)*         | RAG + Multi-Provider LLMs        | Production RAG with vector databases, FastAPI, and MLflow evaluation  |
-| [DevFlow Analyzer](https://github.com/albertodiazdurana/devflow-analyzer)                                | Agentic AI + Process Mining      | ML applied to code-adjacent artifacts (CI/CD logs, execution traces) |
-| [Disaster Tweet Classification](https://github.com/albertodiazdurana/tfidf-to-transformers-with-disaster-tweets) | NLP Technique Comparison  | TF-IDF → Embeddings → Transformers; F1: 0.77                        |
+| Project                                                                                                          | Focus                            | Why It Matters                                                       |
+| ---------------------------------------------------------------------------------------------------------------- | -------------------------------- | -------------------------------------------------------------------- |
+| [SQL Query Agent](https://github.com/albertodiazdurana/sql-query-agent-ollama)                                   | Agentic AI + Local LLMs          | 84-experiment ablation study; Streamlit UI; Docker deployment        |
+| [DSM Graph Explorer](https://github.com/albertodiazdurana/dsm-graph-explorer)                                    | Documentation Integrity + Graphs | Epoch 1 complete; 150 tests, 98% coverage; CLI ready                 |
+| [DS Methodology](https://github.com/albertodiazdurana/agentic-ai-data-science-methodology)                       | AI-Agent Collaboration Framework | Structured workflows for data science projects with AI agents        |
+| [RAG Document Assistant](https://github.com/albertodiazdurana/rag-document-assistant) *(On Ice)*                 | RAG + Multi-Provider LLMs        | Production RAG with vector databases, FastAPI, and MLflow evaluation |
+| [DevFlow Analyzer](https://github.com/albertodiazdurana/devflow-analyzer)                                        | Agentic AI + Process Mining      | ML applied to code-adjacent artifacts (CI/CD logs, execution traces) |
+| [Disaster Tweet Classification](https://github.com/albertodiazdurana/tfidf-to-transformers-with-disaster-tweets) | NLP Technique Comparison         | TF-IDF → Embeddings → Transformers; F1: 0.77                         |
 
 These projects best reflect how I approach ML system design, experimentation, and deployment.
 
@@ -197,7 +197,7 @@ XGBoost regression for 28-day compressive strength from XRD/XRF/PSD measurements
 | -------------------------------- | ------------------------------------------------------------- |
 | **ML Systems from Scratch**      | Design → deployment → monitoring across all featured projects |
 | **Reproducible Experimentation** | MLflow tracking, CI/CD, pytest coverage                       |
-| **Agentic AI & LLM Integration** | SQL Query Agent, DevFlow Analyzer, RAG, multi-provider LLMs  |
+| **Agentic AI & LLM Integration** | SQL Query Agent, DevFlow Analyzer, RAG, multi-provider LLMs   |
 | **NLP & Unstructured Data**      | Topic modeling, text classification, TF-IDF to Transformers   |
 | **Sequential & Workflow Data**   | Process mining, CI/CD logs, event traces                      |
 | **Production-Grade Engineering** | Streamlit apps, API integration, Windows deployment           |
