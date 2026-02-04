@@ -1,6 +1,6 @@
 # Machine Learning Systems & Agentic AI Portfolio
 
-**Alberto Diaz-Durana**
+**Alberto Diaz-Durana** 👋
 Senior Data Scientist | NLP & Process Mining | 10+ Years Experience
 
 Senior Data Scientist with 10+ years building production ML systems from scratch. End-to-end ML pipelines serving 35+ B2B customers (Alcemy). Expertise in NLP (topic modeling, text analysis, LLM agents), process mining, and MLOps. Currently specializing in agentic AI and LLM integration. Proven ability to design ML systems, establish reproducible experiments, and deliver measurable business impact.
