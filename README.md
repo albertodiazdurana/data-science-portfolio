@@ -20,7 +20,7 @@ If you are reviewing this portfolio for **Senior ML Engineer / Research Engineer
 | Project                                                                                                          | Focus                            | Why It Matters                                                       |
 | ---------------------------------------------------------------------------------------------------------------- | -------------------------------- | -------------------------------------------------------------------- |
 | [SQL Query Agent](https://github.com/albertodiazdurana/sql-query-agent-ollama)                                   | Agentic AI + Local LLMs          | 84-experiment ablation study; Streamlit UI; Docker deployment        |
-| [DSM Graph Explorer](https://github.com/albertodiazdurana/dsm-graph-explorer)                                    | Documentation Integrity + Graphs | Epoch 1 complete; 150 tests, 98% coverage; CLI ready                 |
+| [DSM Graph Explorer](https://github.com/albertodiazdurana/dsm-graph-explorer)                                    | Documentation Integrity + Graphs | Epoch 1 complete; 218 tests, 95% coverage; CLI ready                 |
 | [DS Methodology](https://github.com/albertodiazdurana/agentic-ai-data-science-methodology)                       | AI-Agent Collaboration Framework | Structured workflows for data science projects with AI agents        |
 | [RAG Document Assistant](https://github.com/albertodiazdurana/rag-document-assistant) *(On Ice)*                 | RAG + Multi-Provider LLMs        | Production RAG with vector databases, FastAPI, and MLflow evaluation |
 | [DevFlow Analyzer](https://github.com/albertodiazdurana/devflow-analyzer)                                        | Agentic AI + Process Mining      | ML applied to code-adjacent artifacts (CI/CD logs, execution traces) |
@@ -32,7 +32,7 @@ These projects best reflect how I approach ML system design, experimentation, an
 
 ## How These Projects Connect
 
-The top three projects form a single system developed in parallel. The [DS Methodology](https://github.com/albertodiazdurana/agentic-ai-data-science-methodology) (DSM) defines structured workflows for running data science and software engineering projects with AI agents. The [SQL Query Agent](https://github.com/albertodiazdurana/sql-query-agent-ollama) is a case study built using DSM; it follows DSM's sprint planning, decision logging (DEC-001 through DEC-005), hypothesis-driven experiments, and limitation registries, feeding observations back to DSM through dedicated feedback files. The [DSM Graph Explorer](https://github.com/albertodiazdurana/dsm-graph-explorer) is a dog-fooding project; it uses DSM 4.0 to build tooling that validates the methodology's own documentation integrity across ~7,800 lines of cross-referenced markdown. Both projects create a continuous improvement loop: DSM provides structure, the case studies stress-test it, and their feedback refines the next version.
+The top three projects form a single system developed in parallel. The [DS Methodology](https://github.com/albertodiazdurana/agentic-ai-data-science-methodology) (DSM) defines structured workflows for running data science and software engineering projects with AI agents. The [SQL Query Agent](https://github.com/albertodiazdurana/sql-query-agent-ollama) is a case study built using DSM; it follows DSM's sprint planning, decision logging (DEC-001 through DEC-005), hypothesis-driven experiments, and limitation registries, feeding observations back to DSM through dedicated feedback files. The [DSM Graph Explorer](https://github.com/albertodiazdurana/dsm-graph-explorer) is a dog-fooding project; it uses DSM 4.0 to build tooling that validates the methodology's own documentation integrity across ~10,400 lines of cross-referenced markdown. Both projects create a continuous improvement loop: DSM provides structure, the case studies stress-test it, and their feedback refines the next version.
 
 ---
 
@@ -63,7 +63,7 @@ Repository integrity validator and graph database explorer for the DSM framework
 - **Problem**: Large documentation repositories with cross-references break silently as they grow
 - **Approach**: Markdown parser extracts hierarchical sections; cross-reference extractor identifies Section X.Y.Z, Appendix, and DSM patterns
 - **Features**: Code block awareness (skips fenced blocks), line tracking for precise error reporting, severity levels, recursive directory scanning, strict mode for CI/CD
-- **Quality**: 150 tests, 98% coverage
+- **Quality**: 218 tests, 95% coverage
 - **Epoch 1 Complete**: Parser → Validation engine → CLI implemented; real-world validation: 448 → 6 errors
 - **Epoch 2 Planned**: Exclusions/config, CI integration, semantic similarity validation, graph prototype
 
@@ -79,8 +79,9 @@ A living framework for managing data science and ML projects collaboratively wit
 - **Dual-Track Architecture**: Separate pathways for data science (notebooks) and software engineering (applications)
 - **4-Phase Execution**: Exploration → Features → Analysis → Communication
 - **DSM 4.0**: Software Engineering Adaptation for ML applications
+- **DSM 5.0**: Documentation Project Adaptation for methodology repos, portfolios, knowledge bases
 - **Gateway Review Protocol**: Section 6.5 for multi-project governance
-- **Scale**: ~7,800 lines of methodology documentation
+- **Scale**: ~10,400 lines of methodology documentation
 - **Battle-Tested**: Applied across customer segmentation, demand forecasting, computer vision, NLP, RAG, and industrial ML projects
 
 **Why it matters**: Codifies structured AI-agent collaboration workflows; addresses the gap between ad-hoc LLM usage and reproducible, professional-grade project delivery.
