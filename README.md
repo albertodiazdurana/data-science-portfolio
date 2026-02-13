@@ -1,9 +1,9 @@
 # Machine Learning Systems & Agentic AI Portfolio
 
 **Alberto Diaz-Durana**
-Senior Data Scientist | NLP & Process Mining | 10+ Years Experience
+Senior Data Scientist, ML & Data Engineer | Agentic AI, LLM, RAG | NLP, Process Mining | 10+ Years Experience
 
-Senior Data Scientist with 10+ years building production ML systems from scratch. End-to-end ML pipelines serving 35+ B2B customers (Alcemy). Expertise in NLP (topic modeling, text analysis, LLM agents), process mining, and MLOps. Currently specializing in agentic AI and LLM integration. Proven ability to design ML systems, establish reproducible experiments, and deliver measurable business impact.
+Freelance Data Scientist & ML Engineer with 10+ years building production ML systems from scratch. End-to-end ML pipelines serving 35+ B2B customers (Alcemy). Expertise in NLP (topic modeling, text analysis, LLM agents), process mining, and MLOps. Currently focused on agentic AI and LLM integration. Proven ability to design ML systems, establish reproducible experiments, and deliver measurable business impact.
 
 This portfolio demonstrates:
 - Designing ML systems from scratch
@@ -223,6 +223,7 @@ XGBoost regression for 28-day compressive strength from XRD/XRF/PSD measurements
 
 ## Professional Highlights
 
+- **Freelance Data Scientist & ML Engineer** (2025-present): Freelance data science and ML engineering projects. Contributor to [IronCalc](https://github.com/ironcalc/IronCalc) (3.7K stars, EU-funded Rust spreadsheet engine). Independently developing [DSM](https://github.com/albertodiazdurana/agentic-ai-data-science-methodology), an open-source methodology for AI-agent collaboration, with prototype projects validating the framework across NLP, agentic AI, and energy engineering
 - **Alcemy GmbH** (2024-2025): Deployed 5+ ML models optimizing cement production, cutting CO₂ emissions across 35+ customers
 - **Appian Software** (2021-2024): Led 10+ process mining assessments, reducing process times ~20% on average
 - **TU Berlin** (2019-2021): PhD research in energy access prediction; [CPOTE 2020 publication](https://github.com/albertodiazdurana/Prediction-of-cost-efficient-measures-to-improve-energy-access)
