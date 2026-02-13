@@ -232,7 +232,7 @@ XGBoost regression for 28-day compressive strength from XRD/XRF/PSD measurements
 
 ## EDUCATION & CERTIFICATIONS
 
-**AI Data Science Program** (LLM, RAG, Agentic AI) – Masterschool | since 09.2025
+**AI Data Science Program** (LLM, RAG, Agentic AI) – Masterschool | 08.2025 - 02.2026
 Specialization in LLM integration, RAG systems, prompt engineering. LangChain, vector databases, embedding techniques.
 
 **MSc Process, Energy & Environmental Systems Engineering** – TU Berlin | 2010-2013
