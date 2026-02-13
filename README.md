@@ -113,7 +113,8 @@ An agentic ML system that analyzes CI/CD build data through process mining, iden
 - **Approach**: ReAct-style agent with tool suite (summary stats, bottleneck detection, failure analysis, project comparison); generates DFG visualizations showing build status transitions
 - **Scale**: 10,000+ CI/CD builds across 21 open-source Java projects (TravisTorrent dataset)
 - **Evaluation**: MLflow experiment tracking, ROUGE scoring, A/B testing framework, cost monitoring
-- **Quality**: 86 pytest tests; automated response metrics (tokens/sec, actionability scoring)
+- **Historical Analysis**: ChromaDB vector store with semantic search for build pattern retrieval
+- **Quality**: 114 pytest tests; automated response metrics (tokens/sec, actionability scoring)
 - **Cost Efficiency**: GPT-4o-mini primary ($0.15/1M input tokens); GPT-4o for advanced analysis
 - **Architecture**: Modular design (process_analyzer, llm_provider, agent, evaluation); 30 commits, 6-day build cycle
 
