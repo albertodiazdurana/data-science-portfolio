@@ -74,15 +74,16 @@ Repository integrity validator and graph database explorer for the DSM framework
 ### Agentic AI Data Science Methodology (DSM)
 **[Repository](https://github.com/albertodiazdurana/agentic-ai-data-science-methodology)** | Python, Jupyter, Markdown
 
-A living framework for managing data science and ML projects collaboratively with AI agents; continuously refined through real-world case studies.
+A living framework for structured human-AI collaboration in data science, software engineering, and documentation projects; continuously refined through real-world case studies.
 
 - **Dual-Track Architecture**: Separate pathways for data science (notebooks) and software engineering (applications)
 - **4-Phase Execution**: Exploration → Features → Analysis → Communication
 - **DSM 4.0**: Software Engineering Adaptation for ML applications
 - **DSM 5.0**: Documentation Project Adaptation for methodology repos, portfolios, knowledge bases
+- **DSM 6.0**: AI Collaboration Principles, six foundational principles for human-AI collaboration
 - **Gateway Review Protocol**: Section 6.5 for multi-project governance
 - **Scale**: ~10,400 lines of methodology documentation
-- **Battle-Tested**: Applied across customer segmentation, demand forecasting, computer vision, NLP, RAG, and industrial ML projects
+- **Applied Across Projects**: Customer segmentation, demand forecasting, computer vision, NLP, RAG, and industrial ML projects
 
 **Why it matters**: Codifies structured AI-agent collaboration workflows; addresses the gap between ad-hoc LLM usage and reproducible, professional-grade project delivery.
 
