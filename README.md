@@ -154,13 +154,19 @@ Comparative study of NLP evolution through binary classification of disaster-rel
 
 ## Additional Projects
 
-### Data Science for Residential Energy Systems
-**[Domain Reference](https://github.com/albertodiazdurana/residential-heating-data-science-guide)** | **[Heating Curve Simulator](https://github.com/albertodiazdurana/DataScience_ResidentialEnergySystems)** | **[Live App](https://data-science-residential-energy-systems-heating-curve.streamlit.app/)**
+### Residential Heating DS Guide
+**[Repository](https://github.com/albertodiazdurana/residential-heating-data-science-guide)**
 
-Domain knowledge repository bridging energy engineering with ML for building optimization.
-- **Technical Reference**: German heating standards documentation (DIN, VDI, GEG), ML methodologies for energy time series, production MLOps patterns
-- **Heating Curve Simulator**: Interactive tool implementing DIN EN 12831, VDI 6030; real weather data from 8 German cities
+6K-line domain knowledge base bridging German energy standards (DIN, VDI, GEG) with data science.
+- German heating standards documentation, ML methodologies for energy time series, production MLOps patterns
+- Companion to the Residential Energy Apps repository
 - Addresses the [60% skills gap](https://www.iea.org/news/energy-employment-has-surged-but-growing-skills-shortages-threaten-future-momentum) in energy sector data analytics
+
+### Residential Energy Apps
+**[Repository](https://github.com/albertodiazdurana/dsm-residential-energy)** | **[Live App](https://data-science-residential-energy-systems-heating-curve.streamlit.app/)**
+
+Heating curve simulation bridging German energy standards with ML.
+- Interactive Streamlit app implementing DIN EN 12831, VDI 6030; RANSAC regression, real weather data from 8 German cities
 
 ### Demand Forecasting System
 **[Repository](https://github.com/albertodiazdurana/CorporacionFavorita-demand-forecasting-in-retail)** | **[Live App](https://demand-forecasting-in-retail-app.streamlit.app/)**
