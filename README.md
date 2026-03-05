@@ -20,7 +20,7 @@ If you are reviewing this portfolio for **Senior ML Engineer / Research Engineer
 | Project                                                                                                          | Focus                            | Why It Matters                                                       |
 | ---------------------------------------------------------------------------------------------------------------- | -------------------------------- | -------------------------------------------------------------------- |
 | [SQL Query Agent](https://github.com/albertodiazdurana/sql-query-agent-ollama)                                   | Agentic AI + Local LLMs          | 84-experiment ablation study; Streamlit UI; Docker deployment        |
-| [DSM Graph Explorer](https://github.com/albertodiazdurana/dsm-graph-explorer)                                    | Documentation Integrity + Graphs | Epoch 1 complete; 218 tests, 95% coverage; CLI ready                 |
+| [DSM Graph Explorer](https://github.com/albertodiazdurana/dsm-graph-explorer)                                    | Documentation Integrity + Graphs | Epoch 2 complete; 331 tests, 96% coverage; CLI ready                    |
 | [DS Methodology](https://github.com/albertodiazdurana/agentic-ai-data-science-methodology)                       | AI-Agent Collaboration Framework | Structured workflows for data science projects with AI agents        |
 | [RAG Document Assistant](https://github.com/albertodiazdurana/rag-document-assistant) *(On Ice)*                 | RAG + Multi-Provider LLMs        | Production RAG with vector databases, FastAPI, and MLflow evaluation |
 | [DevFlow Analyzer](https://github.com/albertodiazdurana/devflow-analyzer)                                        | Agentic AI + Process Mining      | ML applied to code-adjacent artifacts (CI/CD logs, execution traces) |
@@ -63,9 +63,9 @@ Repository integrity validator and graph database explorer for the DSM framework
 - **Problem**: Large documentation repositories with cross-references break silently as they grow
 - **Approach**: Markdown parser extracts hierarchical sections; cross-reference extractor identifies Section X.Y.Z, Appendix, and DSM patterns
 - **Features**: Code block awareness (skips fenced blocks), line tracking for precise error reporting, severity levels, recursive directory scanning, strict mode for CI/CD
-- **Quality**: 218 tests, 95% coverage
+- **Quality**: 331 tests, 96% coverage
 - **Epoch 1 Complete**: Parser → Validation engine → CLI implemented; real-world validation: 448 → 6 errors
-- **Epoch 2 Planned**: Exclusions/config, CI integration, semantic similarity validation, graph prototype
+- **Epoch 2 Complete**: Exclusions/config, CI integration, semantic validation, graph prototype, convention linting (5 sprints delivered)
 
 **Why it matters**: Practical software engineering applied to documentation maintenance; demonstrates testing discipline, dog-fooding, and graph-based analysis.
 
