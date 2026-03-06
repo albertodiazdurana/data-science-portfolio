@@ -183,6 +183,14 @@ Industrial defect detection: U-Net segmentation, autoencoder anomaly detection (
 
 Behavioral clustering for personalized rewards: 5,765 users, $23M CLV analyzed, 97.2% confidence.
 
+### AI in Data Science — Automation, Sentiment & Explainability
+**[Repository](https://github.com/albertodiazdurana/AI-in-Data-Science)** | PyCaret, Hugging Face Transformers, SHAP, LIME
+
+Three-part evaluation of AI-assisted data science tools, each testing a different claim about automation.
+- W2: PyCaret AutoML (R² 0.93 vs 0.80 manual baseline); automated model selection delivered 30x more improvement than automated feature engineering
+- W3: Hugging Face RoBERTa zero-shot sentiment on Twitter data; patterns confirmed at 50K scale (113 companies analyzed)
+- W4: SHAP + LIME explainability on heart disease classification (RF accuracy 0.837, AUC 0.901); both tools agree on top features
+
 ### Financial Risk Modeling
 **[Repository](https://github.com/albertodiazdurana/loan-approval-prediction)**
 
@@ -217,9 +225,9 @@ XGBoost regression for 28-day compressive strength from XRD/XRF/PSD measurements
 
 **Languages & Core Tools**: Python | SQL | Git | Jupyter | pytest
 
-**Agentic AI & NLP**: LangChain | LangGraph | Ollama | ChromaDB | Sentence Transformers | NLTK | Gensim | RAG
+**Agentic AI & NLP**: LangChain | LangGraph | Ollama | ChromaDB | Hugging Face Transformers | Sentence Transformers | NLTK | Gensim | RAG
 
-**ML & Data Science**: scikit-learn | XGBoost | TensorFlow | MLflow | SHAP
+**ML & Data Science**: scikit-learn | XGBoost | PyCaret | TensorFlow | MLflow | SHAP | LIME
 
 **Data Engineering & MLOps**: Spark | Polars | FastAPI | AWS | Docker | Argo Workflows | SQLite | PostgreSQL
 
