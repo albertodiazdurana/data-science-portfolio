@@ -21,7 +21,7 @@ If you are reviewing this portfolio for **Senior ML Engineer / Research Engineer
 | ---------------------------------------------------------------------------------------------------------------- | -------------------------------- | -------------------------------------------------------------------- |
 | [SQL Query Agent](https://github.com/albertodiazdurana/sql-query-agent-ollama)                                   | Agentic AI + Local LLMs          | 84-experiment ablation study; Streamlit UI; Docker deployment        |
 | [DSM Graph Explorer](https://github.com/albertodiazdurana/dsm-graph-explorer)                                    | Documentation Integrity + Graphs | Epoch 2 complete; 331 tests, 96% coverage; CLI ready                    |
-| [DS Methodology](https://github.com/albertodiazdurana/agentic-ai-data-science-methodology)                       | AI-Agent Collaboration Framework | Structured workflows for data science projects with AI agents        |
+| [DS Methodology](https://github.com/albertodiazdurana/take-ai-bite)                       | AI-Agent Collaboration Framework | Structured workflows for data science projects with AI agents        |
 | [RAG Document Assistant](https://github.com/albertodiazdurana/rag-document-assistant) *(On Ice)*                 | RAG + Multi-Provider LLMs        | Production RAG with vector databases, FastAPI, and MLflow evaluation |
 | [DevFlow Analyzer](https://github.com/albertodiazdurana/devflow-analyzer)                                        | Agentic AI + Process Mining      | ML applied to code-adjacent artifacts (CI/CD logs, execution traces) |
 | [Disaster Tweet Classification](https://github.com/albertodiazdurana/tfidf-to-transformers-with-disaster-tweets) | NLP Technique Comparison         | TF-IDF → Embeddings → Transformers; F1: 0.77                         |
@@ -32,7 +32,11 @@ These projects best reflect how I approach ML system design, experimentation, an
 
 ## How These Projects Connect
 
-The top three projects form a single system developed in parallel. The [DS Methodology](https://github.com/albertodiazdurana/agentic-ai-data-science-methodology) (DSM) defines structured workflows for running data science and software engineering projects with AI agents. The [SQL Query Agent](https://github.com/albertodiazdurana/sql-query-agent-ollama) is a case study built using DSM; it follows DSM's sprint planning, decision logging (DEC-001 through DEC-005), hypothesis-driven experiments, and limitation registries, feeding observations back to DSM through dedicated feedback files. The [DSM Graph Explorer](https://github.com/albertodiazdurana/dsm-graph-explorer) is a dog-fooding project; it uses DSM 4.0 to build tooling that validates the methodology's own documentation integrity across ~10,400 lines of cross-referenced markdown. Both projects create a continuous improvement loop: DSM provides structure, the case studies stress-test it, and their feedback refines the next version.
+<p align="center">
+  <img src="assets/take-ai-bite-logo.png" alt="Take AI Bite" width="120">
+</p>
+
+The top three projects form a single system developed in parallel. The [DS Methodology](https://github.com/albertodiazdurana/take-ai-bite) (DSM) defines structured workflows for running data science and software engineering projects with AI agents. The [SQL Query Agent](https://github.com/albertodiazdurana/sql-query-agent-ollama) is a case study built using DSM; it follows DSM's sprint planning, decision logging (DEC-001 through DEC-005), hypothesis-driven experiments, and limitation registries, feeding observations back to DSM through dedicated feedback files. The [DSM Graph Explorer](https://github.com/albertodiazdurana/dsm-graph-explorer) is a dog-fooding project; it uses DSM 4.0 to build tooling that validates the methodology's own documentation integrity across ~10,400 lines of cross-referenced markdown. Both projects create a continuous improvement loop: DSM provides structure, the case studies stress-test it, and their feedback refines the next version.
 
 ---
 
@@ -72,7 +76,7 @@ Repository integrity validator and graph database explorer for the DSM framework
 ---
 
 ### Agentic AI Data Science Methodology (DSM)
-**[Repository](https://github.com/albertodiazdurana/agentic-ai-data-science-methodology)** | Python, Jupyter, Markdown
+**[Repository](https://github.com/albertodiazdurana/take-ai-bite)** | Python, Jupyter, Markdown
 
 A living framework for structured human-AI collaboration in data science, software engineering, and documentation projects; continuously refined through real-world case studies.
 
@@ -239,7 +243,7 @@ XGBoost regression for 28-day compressive strength from XRD/XRF/PSD measurements
 
 ## Professional Highlights
 
-- **Freelance Data Scientist & ML Engineer** (2025-present): Freelance data science and ML engineering projects. Contributor to [IronCalc](https://github.com/ironcalc/IronCalc) (3.7K stars, EU-funded Rust spreadsheet engine). Independently developing [DSM](https://github.com/albertodiazdurana/agentic-ai-data-science-methodology), an open-source methodology for AI-agent collaboration, with prototype projects validating the framework across NLP, agentic AI, and energy engineering
+- **Freelance Data Scientist & ML Engineer** (2025-present): Freelance data science and ML engineering projects. Contributor to [IronCalc](https://github.com/ironcalc/IronCalc) (3.7K stars, EU-funded Rust spreadsheet engine). Independently developing [DSM](https://github.com/albertodiazdurana/take-ai-bite), an open-source methodology for AI-agent collaboration, with prototype projects validating the framework across NLP, agentic AI, and energy engineering
 - **Alcemy GmbH** (2024-2025): Deployed 5+ ML models optimizing cement production, cutting CO₂ emissions across 35+ customers
 - **Appian Software** (2021-2024): Led 10+ process mining assessments, reducing process times ~20% on average
 - **TU Berlin** (2019-2021): PhD research in energy access prediction; [CPOTE 2020 publication](https://github.com/albertodiazdurana/Prediction-of-cost-efficient-measures-to-improve-energy-access)
