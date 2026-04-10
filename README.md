@@ -1,15 +1,18 @@
 # Machine Learning Systems & Agentic AI Portfolio
 
 **Alberto Diaz-Durana**
-Senior Data Scientist, ML & Data Engineer | Agentic AI, LLM, RAG | NLP, Process Mining | 10+ Years Experience
+Senior Data Scientist | AI Product Architect | Creator of Take AI Bite | 10+ Years Experience
 
-Freelance Data Scientist & ML Engineer with 10+ years building production ML systems from scratch. End-to-end ML pipelines serving 35+ B2B customers (Alcemy). Expertise in NLP (topic modeling, text analysis, LLM agents), process mining, and MLOps. Currently focused on agentic AI and LLM integration. Proven ability to design ML systems, establish reproducible experiments, and deliver measurable business impact.
+Creator of [Take AI Bite](https://github.com/albertodiazdurana/take-ai-bite), a framework for human-AI collaboration where the human stays in control, grows through the work, and retains every lesson learned. Powered by a living methodology (DSM) that governs the full lifecycle of AI-assisted projects, from research through implementation to governance.
+
+Data Scientist & AI Product Architect with 10+ years building production ML systems from scratch. End-to-end ML pipelines serving 35+ B2B customers (Alcemy). Expertise in NLP, agentic AI, process mining, and AI system design. Every architectural choice, experiment design, and evaluation in this portfolio is mine. Take AI Bite provided the structure that kept the collaboration disciplined, the decisions human, and the outcomes reproducible.
 
 This portfolio demonstrates:
 - Designing ML systems from scratch
 - Translating research ideas into production-ready pipelines
 - Working with unstructured text, logs, and sequential data
 - Building agentic AI systems that reason, invoke tools, and generate actionable insights
+- Field-testing human-AI collaboration principles across data science, software engineering, and documentation
 
 ---
 
@@ -20,11 +23,12 @@ If you are reviewing this portfolio for **Senior ML Engineer / Research Engineer
 | Project                                                                                                          | Focus                            | Why It Matters                                                       |
 | ---------------------------------------------------------------------------------------------------------------- | -------------------------------- | -------------------------------------------------------------------- |
 | [SQL Query Agent](https://github.com/albertodiazdurana/sql-query-agent-ollama)                                   | Agentic AI + Local LLMs          | 84-experiment ablation study; Streamlit UI; Docker deployment        |
-| [DSM Graph Explorer](https://github.com/albertodiazdurana/dsm-graph-explorer)                                    | Documentation Integrity + Graphs | Epoch 2 complete; 331 tests, 96% coverage; CLI ready                    |
-| [DS Methodology](https://github.com/albertodiazdurana/take-ai-bite)                       | AI-Agent Collaboration Framework | Structured workflows for data science projects with AI agents        |
-| [RAG Document Assistant](https://github.com/albertodiazdurana/rag-document-assistant) *(On Ice)*                 | RAG + Multi-Provider LLMs        | Production RAG with vector databases, FastAPI, and MLflow evaluation |
+| [DSM Graph Explorer](https://github.com/albertodiazdurana/dsm-graph-explorer)                                    | Documentation Integrity + Graphs | Epoch 4 in progress; 664 tests, 91% coverage; v0.4.0                   |
+| [Take AI Bite](https://github.com/albertodiazdurana/take-ai-bite)                                            | Human-AI Collaboration Framework | Nine principles + DSM engine; field-tested across 15+ projects      |
+| [RAG Document Assistant](https://github.com/albertodiazdurana/rag-document-assistant)*                 | RAG + Multi-Provider LLMs        | Production RAG with vector databases, FastAPI, and MLflow evaluation |
 | [DevFlow Analyzer](https://github.com/albertodiazdurana/devflow-analyzer)                                        | Agentic AI + Process Mining      | ML applied to code-adjacent artifacts (CI/CD logs, execution traces) |
 | [Disaster Tweet Classification](https://github.com/albertodiazdurana/tfidf-to-transformers-with-disaster-tweets) | NLP Technique Comparison         | TF-IDF → Embeddings → Transformers; F1: 0.77                         |
+| [Flower Classification](https://github.com/albertodiazdurana/efficientnet-flower-classification-transfer-learning) | Few-Shot Transfer Learning       | EfficientNetB0; 91.90% accuracy on 102 classes with ~10 images/class |
 
 These projects best reflect how I approach ML system design, experimentation, and deployment.
 
@@ -32,11 +36,7 @@ These projects best reflect how I approach ML system design, experimentation, an
 
 ## How These Projects Connect
 
-<p align="center">
-  <img src="assets/take-ai-bite-logo.png" alt="Take AI Bite" width="120">
-</p>
-
-The top three projects form a single system developed in parallel. The [DS Methodology](https://github.com/albertodiazdurana/take-ai-bite) (DSM) defines structured workflows for running data science and software engineering projects with AI agents. The [SQL Query Agent](https://github.com/albertodiazdurana/sql-query-agent-ollama) is a case study built using DSM; it follows DSM's sprint planning, decision logging (DEC-001 through DEC-005), hypothesis-driven experiments, and limitation registries, feeding observations back to DSM through dedicated feedback files. The [DSM Graph Explorer](https://github.com/albertodiazdurana/dsm-graph-explorer) is a dog-fooding project; it uses DSM 4.0 to build tooling that validates the methodology's own documentation integrity across ~10,400 lines of cross-referenced markdown. Both projects create a continuous improvement loop: DSM provides structure, the case studies stress-test it, and their feedback refines the next version.
+The top three projects form a single system built on [Take AI Bite](https://github.com/albertodiazdurana/take-ai-bite) principles. Take AI Bite defines nine principles for human-AI collaboration; DSM (Deliberate Systematic Methodology) is the engine that operationalizes them into versioned workflows, session management, and cross-project governance. The [SQL Query Agent](https://github.com/albertodiazdurana/sql-query-agent-ollama) is a case study built using DSM; it follows sprint planning, decision logging (DEC-001 through DEC-005), hypothesis-driven experiments, and limitation registries, feeding observations back through dedicated feedback files. The [DSM Graph Explorer](https://github.com/albertodiazdurana/dsm-graph-explorer) is a dog-fooding project; it uses DSM 4.0 to build tooling that validates the methodology's own documentation integrity across ~10,400 lines of cross-referenced markdown. Both projects create a continuous improvement loop: Take AI Bite provides the principles, DSM provides the structure, the case studies stress-test both, and their feedback refines the next version.
 
 ---
 
@@ -60,40 +60,40 @@ A text-to-code generation testbed; self-correcting agentic system that converts 
 ---
 
 ### DSM Graph Explorer — Documentation Integrity Validator
-**[Repository](https://github.com/albertodiazdurana/dsm-graph-explorer)** | Python, pytest, Neo4j, NetworkX
+**[Repository](https://github.com/albertodiazdurana/dsm-graph-explorer)** | Python, pytest, FalkorDB, NetworkX
 
 Repository integrity validator and graph database explorer for the DSM framework.
 
 - **Problem**: Large documentation repositories with cross-references break silently as they grow
 - **Approach**: Markdown parser extracts hierarchical sections; cross-reference extractor identifies Section X.Y.Z, Appendix, and DSM patterns
 - **Features**: Code block awareness (skips fenced blocks), line tracking for precise error reporting, severity levels, recursive directory scanning, strict mode for CI/CD
-- **Quality**: 331 tests, 96% coverage
+- **Quality**: 664 tests, 91% coverage
 - **Epoch 1 Complete**: Parser → Validation engine → CLI implemented; real-world validation: 448 → 6 errors
 - **Epoch 2 Complete**: Exclusions/config, CI integration, semantic validation, graph prototype, convention linting (5 sprints delivered)
+- **Epoch 3 Complete**: FalkorDBLite persistence (GraphStore API, Cypher queries), git-ref temporal compilation with diff analysis, entity inventory for cross-repo resolution, cross-repo bridge graph with drift detection (7/7 MUSTs delivered)
+- **Epoch 4 In Progress**: Incremental graph updates (`update_files()`), FalkorDB heading indexes, `to_networkx()` roundtrip export, CLI ref-change detection; heading-based section detection, multi-file resilience, four-layer protocol usage analysis (`--protocol-usage`, `--usage-compare`)
 
 **Why it matters**: Practical software engineering applied to documentation maintenance; demonstrates testing discipline, dog-fooding, and graph-based analysis.
 
 ---
 
-### Agentic AI Data Science Methodology (DSM)
-**[Repository](https://github.com/albertodiazdurana/take-ai-bite)** | Python, Jupyter, Markdown
+### Take AI Bite, Human-AI Collaboration Framework
+**[Repository](https://github.com/albertodiazdurana/take-ai-bite)** | **[Website](https://take-ai-bite.com/)** | **[Blog](https://blog.take-ai-bite.com/)** | Python, Jupyter, Markdown
 
-A living framework for structured human-AI collaboration in data science, software engineering, and documentation projects; continuously refined through real-world case studies.
+A framework for human-AI collaboration where the human stays in control, grows through the work, and retains every lesson learned. Nine principles address specific failure modes in AI-assisted work, from review sizing to knowledge provenance to process transparency.
 
+- **Nine Principles**: Take a Bite, The Human Brings the Spark, Earn Your Assertions, Critical Thinking, Know Your Context, Match the Room, Own Your Process, Know What You Own, Think Ahead
+- **The Engine (DSM)**: Deliberate Systematic Methodology operationalizes the principles into versioned workflows, session management, cross-project governance, and a hub-spoke feedback loop
+- **Avatar Concept**: The ecosystem accumulates your memory, decisions, and expertise across sessions and projects, becoming an extension of your professional self
 - **Dual-Track Architecture**: Separate pathways for data science (notebooks) and software engineering (applications)
-- **4-Phase Execution**: Exploration → Features → Analysis → Communication
-- **DSM 4.0**: Software Engineering Adaptation for ML applications
-- **DSM 5.0**: Documentation Project Adaptation for methodology repos, portfolios, knowledge bases
-- **DSM 6.0**: AI Collaboration Principles, six foundational principles for human-AI collaboration
-- **Gateway Review Protocol**: Section 6.5 for multi-project governance
-- **Scale**: ~10,400 lines of methodology documentation
-- **Applied Across Projects**: Customer segmentation, demand forecasting, computer vision, NLP, RAG, and industrial ML projects
+- **Scale**: ~10,400 lines of methodology documentation across 15+ projects
+- **Field-Tested**: Data science, software engineering, open-source contribution, structured documentation, research synthesis, and administrative processes
 
-**Why it matters**: Codifies structured AI-agent collaboration workflows; addresses the gap between ad-hoc LLM usage and reproducible, professional-grade project delivery.
+**Why it matters**: Addresses the gap between ad-hoc LLM usage and reproducible, professional-grade project delivery. Not theoretical; emerged from daily practice with AI agents across multiple domains.
 
 ---
 
-### RAG Document Assistant — Production-Ready Retrieval-Augmented Generation *(On Ice)*
+### RAG Document Assistant — Production-Ready Retrieval-Augmented Generation
 **[Repository](https://github.com/albertodiazdurana/rag-document-assistant)** | LangChain, LangGraph, ChromaDB, FastAPI, MLflow, Streamlit
 
 A document Q&A system that reads your files (PDF, Markdown, TXT), understands their content, and answers questions accurately with source citations.
@@ -127,6 +127,22 @@ An agentic ML system that analyzes CI/CD build data through process mining, iden
 
 ---
 
+### Flower Classification — Few-Shot Transfer Learning with EfficientNetB0
+**[Repository](https://github.com/albertodiazdurana/efficientnet-flower-classification-transfer-learning)** | TensorFlow, EfficientNetB0, Transfer Learning
+
+Transfer learning for 102-class flower species identification using only ~10 labeled images per class.
+
+- **Problem**: Fine-grained image classification with minimal labeled data (Oxford Flowers 102 dataset)
+- **Approach**: 3-phase progressive fine-tuning: head-only → top 30% unfreeze → full fine-tune
+- **Results**: Baseline CNN 24.56% → EfficientNetB0 91.01% → with Test-Time Augmentation **91.90%** (3.7x improvement)
+- **TTA**: 5 augmented views (original, h-flip, ±90° rotation, center crop), averaged softmax
+- **Error Analysis**: Systematic confusion-pair analysis revealing color/shape similarity patterns
+- **Scale**: 1,734 training images, 6,149 test images, Colab-ready notebook
+
+**Why it matters**: Deep learning done properly, from baseline comparison through progressive fine-tuning to error analysis, not just API calls.
+
+---
+
 ### NLP Topic Modeling — Pre-LLM Text-to-Structure Innovation
 **[Repository](https://github.com/albertodiazdurana/nlp-topic-modeling)** | NLTK, Gensim, scikit-learn
 
@@ -153,6 +169,20 @@ Comparative study of NLP evolution through binary classification of disaster-rel
 - **Scale**: 7,613 labeled tweets from Kaggle NLP competition
 
 **Why it matters**: Demonstrates understanding of NLP technique evolution and trade-offs; contextual embeddings outperform statistical methods for ambiguous text.
+
+---
+
+### German Adversarial Prompting — LLM Evaluation via Linguistic Impossibility
+**[Repository](https://github.com/albertodiazdurana/german-adversarial-prompting)** | GPT-4o, Prompt Engineering
+
+Adversarial evaluation exploiting the German ß/SS round-trip impossibility to test LLM robustness.
+
+- **Core insight**: German uppercasing is lossy (ß → SS), but lowercasing is ambiguous (SS → ss or ß?). This creates an information-theoretic impossibility that no LLM can resolve without external knowledge
+- **Method**: 3-turn adversarial conversation design targeting GPT-4o, with multi-pass validation
+- **Evaluation**: 5-agent comparison experiment across different LLM configurations
+- **Scope**: 8 DSM sessions, structured methodology trail, public research repository
+
+**Why it matters**: Demonstrates adversarial prompt engineering, multilingual LLM evaluation, and systematic red-teaming methodology.
 
 ---
 
@@ -200,6 +230,14 @@ Three-part evaluation of AI-assisted data science tools, each testing a differen
 
 Credit risk classification with SHAP interpretability: 80% accuracy, SMOTE for imbalance.
 
+### DSM Stress Tester — Methodology Validation Through Controlled Experiments
+**[Repository](https://github.com/albertodiazdurana/dsm-stress-tester)**
+
+Controlled stress-testing of DSM and Take AI Bite through designed experiments.
+- Active experiment: DSM vs Vanilla Claude head-to-head comparison on identical RL challenges (DQN Frozen Lake, 6 stages)
+- 5 protocol proposals pushed to DSM Central from findings
+- Tests specific conditions: empty project bootstrap, autonomous vs guided collaboration, session boundary handling
+
 ### Log Processor ETL Pipeline
 **[Repository](https://github.com/albertodiazdurana/log-processor)**
 
@@ -229,11 +267,11 @@ XGBoost regression for 28-day compressive strength from XRD/XRF/PSD measurements
 
 **Languages & Core Tools**: Python | SQL | Git | Jupyter | pytest
 
-**Agentic AI & NLP**: LangChain | LangGraph | Ollama | ChromaDB | Hugging Face Transformers | Sentence Transformers | NLTK | Gensim | RAG
+**Agentic AI & NLP**: LangChain | LangGraph | Ollama | ChromaDB | Hugging Face Transformers | Sentence Transformers | NLTK | Gensim | RAG | AWS Bedrock
 
 **ML & Data Science**: scikit-learn | XGBoost | PyCaret | TensorFlow | MLflow | SHAP | LIME
 
-**Data Engineering & MLOps**: Spark | Polars | FastAPI | AWS | Docker | Argo Workflows | SQLite | PostgreSQL
+**Data Engineering & MLOps**: Spark | Polars | FastAPI | AWS (Bedrock, SageMaker) | Docker | Argo Workflows | SQLite | PostgreSQL
 
 **Visualization & BI**: Streamlit | Plotly | Power BI | Matplotlib | Seaborn
 
@@ -243,7 +281,7 @@ XGBoost regression for 28-day compressive strength from XRD/XRF/PSD measurements
 
 ## Professional Highlights
 
-- **Freelance Data Scientist & ML Engineer** (2025-present): Freelance data science and ML engineering projects. Contributor to [IronCalc](https://github.com/ironcalc/IronCalc) (3.7K stars, EU-funded Rust spreadsheet engine). Independently developing [DSM](https://github.com/albertodiazdurana/take-ai-bite), an open-source methodology for AI-agent collaboration, with prototype projects validating the framework across NLP, agentic AI, and energy engineering
+- **Data Scientist & AI Product Architect, Take AI Bite** (2025-present): Creator of [Take AI Bite](https://github.com/albertodiazdurana/take-ai-bite) ([take-ai-bite.com](https://take-ai-bite.com/)), a framework for structured human-AI collaboration with 9 principles and a living methodology engine (DSM) governing a 14-repository ecosystem. Contributor to [IronCalc](https://github.com/ironcalc/IronCalc) (3.7K stars, EU-funded Rust spreadsheet engine). Publishing at [take-ai-bite.com](https://take-ai-bite.com/) and [blog.take-ai-bite.com](https://blog.take-ai-bite.com/)
 - **Alcemy GmbH** (2024-2025): Deployed 5+ ML models optimizing cement production, cutting CO₂ emissions across 35+ customers
 - **Appian Software** (2021-2024): Led 10+ process mining assessments, reducing process times ~20% on average
 - **TU Berlin** (2019-2021): PhD research in energy access prediction; [CPOTE 2020 publication](https://github.com/albertodiazdurana/Prediction-of-cost-efficient-measures-to-improve-energy-access)
@@ -284,10 +322,10 @@ Spanish (Native) | English (C2) | German (C2) | Portuguese (B2)
 
 ## 📫 Connect
 
-[LinkedIn](https://linkedin.com/in/albertodiazdurana) | [GitHub](https://github.com/albertodiazdurana)
+[LinkedIn](https://linkedin.com/in/albertodiazdurana) | [GitHub](https://github.com/albertodiazdurana) | [Blog](https://blog.take-ai-bite.com/) | [Take AI Bite](https://take-ai-bite.com/)
 
 ---
 
-**Note**: This portfolio is intentionally systems-oriented rather than notebook-centric. My goal is to demonstrate how I think about ML as an engineering and research discipline, not just model training.
+**Note**: This portfolio is intentionally systems-oriented rather than notebook-centric. Every decision, from system architecture to experiment design, is mine; [Take AI Bite](https://github.com/albertodiazdurana/take-ai-bite) is the structure that kept the process disciplined and the results reproducible.
 
-⭐ **Currently open to opportunities** in ML Engineering, Applied Research, and AI Product Development
+**Currently open to opportunities** in ML Engineering, Applied Research, and AI Product Development
