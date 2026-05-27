@@ -3,7 +3,7 @@
 **Alberto Diaz-Durana**
 Senior Data Scientist | AI Product Architect | Creator of Take AI Bite | 10+ Years Experience
 
-Creator of [Take AI Bite](https://github.com/albertodiazdurana/take-ai-bite), a framework for human-AI collaboration where the human stays in control, grows through the work, and retains every lesson learned. Powered by a living methodology (DSM) that governs the full lifecycle of AI-assisted projects, from research through implementation to governance.
+Creator of [Take AI Bite](https://github.com/albertodiazdurana/take-ai-bite), a framework for human-AI collaboration where the human stays in control, grows through the work, and retains every lesson learned. Powered by a living methodology DSM (Deliberate Systematic Methodology) that governs the full lifecycle of AI-assisted projects, from research through implementation to governance.
 
 Data Scientist & AI Product Architect with 10+ years building production ML systems from scratch. End-to-end ML pipelines serving 35+ B2B customers (Alcemy). Expertise in NLP, agentic AI, process mining, and AI system design. Every architectural choice, experiment design, and evaluation in this portfolio is mine. Take AI Bite provided the structure that kept the collaboration disciplined, the decisions human, and the outcomes reproducible.
 
@@ -281,11 +281,18 @@ XGBoost regression for 28-day compressive strength from XRD/XRF/PSD measurements
 
 ## Professional Highlights
 
-- **Data Scientist & AI Product Architect, Take AI Bite** (2025-present): Creator of [Take AI Bite](https://github.com/albertodiazdurana/take-ai-bite) ([take-ai-bite.com](https://take-ai-bite.com/)), a framework for structured human-AI collaboration with 9 principles and a living methodology engine (DSM) governing a 14-repository ecosystem. Contributor to [IronCalc](https://github.com/ironcalc/IronCalc) (3.7K stars, EU-funded Rust spreadsheet engine). Publishing at [take-ai-bite.com](https://take-ai-bite.com/) and [blog.take-ai-bite.com](https://blog.take-ai-bite.com/)
+- **Data Scientist & AI Product Architect, Take AI Bite** (2025-present): Creator of [Take AI Bite](https://github.com/albertodiazdurana/take-ai-bite) ([take-ai-bite.com](https://take-ai-bite.com/)), a framework for structured human-AI collaboration with 9 principles and a living methodology engine (DSM) governing a 14-repository ecosystem. Publishing at [take-ai-bite.com](https://take-ai-bite.com/) and [blog.take-ai-bite.com](https://blog.take-ai-bite.com/)
 - **Alcemy GmbH** (2024-2025): Deployed 5+ ML models optimizing cement production, cutting CO₂ emissions across 35+ customers
 - **Appian Software** (2021-2024): Led 10+ process mining assessments, reducing process times ~20% on average
 - **TU Berlin** (2019-2021): PhD research in energy access prediction; [CPOTE 2020 publication](https://github.com/albertodiazdurana/Prediction-of-cost-efficient-measures-to-improve-energy-access)
 - **HEDERA Sustainable Solutions GmbH** (2018-2021): Co-founded sustainability startup, built cloud-based systems for 15+ international projects
+
+---
+
+## Open Source Contributions
+
+- **[deepset-ai/haystack](https://github.com/deepset-ai/haystack)** (LLM framework, 25K+ stars): two documentation PRs merged into the Haystack ecosystem, adding Ollama tool-calling and streaming-with-tools examples ([haystack #11268](https://github.com/deepset-ai/haystack/pull/11268), invited and merged by a deepset core member on first review; [haystack-integrations #473](https://github.com/deepset-ai/haystack-integrations/pull/473)).
+- **[IronCalc](https://github.com/ironcalc/IronCalc)** (EU-funded Rust spreadsheet engine, 3.7K stars): contributed the `ACCRINTM` financial function (accrued interest at maturity) to the calculation engine, merged by the project founder ([PR #865](https://github.com/ironcalc/IronCalc/pull/865)).
 
 ---
 
@@ -303,6 +310,7 @@ Research: Energy access prediction using clustering and logistic regression. [CP
 **Diploma Mechanical Engineering** – Universidad de Los Andes, Colombia | 2001-2006
 
 **Certifications:**
+- AI Data Science Specialization (Masterschool / MSIT GmbH, 2026) – 1,400 hours, AZAV-certified
 - MLOps Specialization (DeepLearning.AI, 2024)
 - future Training & Consulting GmbH – Data Science with Python (2018)
 - Data Analytics for Six Sigma (University of Amsterdam, 2017)
