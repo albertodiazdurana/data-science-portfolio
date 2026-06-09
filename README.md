@@ -24,7 +24,7 @@ If you are reviewing this portfolio for **Senior ML Engineer / Research Engineer
 | ---------------------------------------------------------------------------------------------------------------- | -------------------------------- | -------------------------------------------------------------------- |
 | [SQL Query Agent](https://github.com/albertodiazdurana/sql-query-agent-ollama)                                   | Agentic AI + Local LLMs          | 84-experiment ablation study; Streamlit UI; Docker deployment        |
 | [DSM Graph Explorer](https://github.com/albertodiazdurana/dsm-graph-explorer)                                    | Documentation Integrity + Graphs | Epoch 4 in progress; 664 tests, 91% coverage; v0.4.0                   |
-| [Take AI Bite](https://github.com/albertodiazdurana/take-ai-bite)                                            | Human-AI Collaboration Framework | Nine principles + DSM engine; field-tested across 15+ projects      |
+| [Take AI Bite](https://github.com/albertodiazdurana/take-ai-bite)                                            | Human-AI Collaboration Framework | 13 principles + DSM engine; field-tested across 15+ projects      |
 | [RAG Document Assistant](https://github.com/albertodiazdurana/rag-document-assistant)*                 | RAG + Multi-Provider LLMs        | Production RAG with vector databases, FastAPI, and MLflow evaluation |
 | [DevFlow Analyzer](https://github.com/albertodiazdurana/devflow-analyzer)                                        | Agentic AI + Process Mining      | ML applied to code-adjacent artifacts (CI/CD logs, execution traces) |
 | [Disaster Tweet Classification](https://github.com/albertodiazdurana/tfidf-to-transformers-with-disaster-tweets) | NLP Technique Comparison         | TF-IDF → Embeddings → Transformers; F1: 0.77                         |
@@ -36,7 +36,7 @@ These projects best reflect how I approach ML system design, experimentation, an
 
 ## How These Projects Connect
 
-The top three projects form a single system built on [Take AI Bite](https://github.com/albertodiazdurana/take-ai-bite) principles. Take AI Bite defines nine principles for human-AI collaboration; DSM (Deliberate Systematic Methodology) is the engine that operationalizes them into versioned workflows, session management, and cross-project governance. The [SQL Query Agent](https://github.com/albertodiazdurana/sql-query-agent-ollama) is a case study built using DSM; it follows sprint planning, decision logging (DEC-001 through DEC-005), hypothesis-driven experiments, and limitation registries, feeding observations back through dedicated feedback files. The [DSM Graph Explorer](https://github.com/albertodiazdurana/dsm-graph-explorer) is a dog-fooding project; it uses DSM 4.0 to build tooling that validates the methodology's own documentation integrity across ~10,400 lines of cross-referenced markdown. Both projects create a continuous improvement loop: Take AI Bite provides the principles, DSM provides the structure, the case studies stress-test both, and their feedback refines the next version.
+The top three projects form a single system built on [Take AI Bite](https://github.com/albertodiazdurana/take-ai-bite) principles. Take AI Bite defines 13 principles for human-AI collaboration; DSM (Deliberate Systematic Methodology) is the engine that operationalizes them into versioned workflows, session management, and cross-project governance. The [SQL Query Agent](https://github.com/albertodiazdurana/sql-query-agent-ollama) is a case study built using DSM; it follows sprint planning, decision logging (DEC-001 through DEC-005), hypothesis-driven experiments, and limitation registries, feeding observations back through dedicated feedback files. The [DSM Graph Explorer](https://github.com/albertodiazdurana/dsm-graph-explorer) is a dog-fooding project; it uses DSM 4.0 to build tooling that validates the methodology's own documentation integrity across ~10,400 lines of cross-referenced markdown. Both projects create a continuous improvement loop: Take AI Bite provides the principles, DSM provides the structure, the case studies stress-test both, and their feedback refines the next version.
 
 ---
 
@@ -80,9 +80,9 @@ Repository integrity validator and graph database explorer for the DSM framework
 ### Take AI Bite, Human-AI Collaboration Framework
 **[Repository](https://github.com/albertodiazdurana/take-ai-bite)** | **[Website](https://take-ai-bite.com/)** | **[Blog](https://blog.take-ai-bite.com/)** | Python, Jupyter, Markdown
 
-A framework for human-AI collaboration where the human stays in control, grows through the work, and retains every lesson learned. Nine principles address specific failure modes in AI-assisted work, from review sizing to knowledge provenance to process transparency.
+A framework for human-AI collaboration where the human stays in control, grows through the work, and retains every lesson learned. 13 principles address specific failure modes in AI-assisted work, from review sizing to knowledge provenance to process transparency.
 
-- **Nine Principles**: Take a Bite, The Human Brings the Spark, Earn Your Assertions, Critical Thinking, Know Your Context, Match the Room, Own Your Process, Know What You Own, Think Ahead
+- **13 Principles**: Take a Bite, The Human Brings the Spark, Earn Your Assertions, Critical Thinking, Know Your Context, Match the Room, Own Your Process, Know What You Own, Think Ahead, We Need to Talk, Read the User's Manual, Don't be a Hero (Delegate the Effort), Introduce Once Then Deepen
 - **The Engine (DSM)**: Deliberate Systematic Methodology operationalizes the principles into versioned workflows, session management, cross-project governance, and a hub-spoke feedback loop
 - **Avatar Concept**: The ecosystem accumulates your memory, decisions, and expertise across sessions and projects, becoming an extension of your professional self
 - **Dual-Track Architecture**: Separate pathways for data science (notebooks) and software engineering (applications)
@@ -281,7 +281,7 @@ XGBoost regression for 28-day compressive strength from XRD/XRF/PSD measurements
 
 ## Professional Highlights
 
-- **Data Scientist & AI Product Architect, Take AI Bite** (2025-present): Creator of [Take AI Bite](https://github.com/albertodiazdurana/take-ai-bite) ([take-ai-bite.com](https://take-ai-bite.com/)), a framework for structured human-AI collaboration with 9 principles and a living methodology engine (DSM) governing a 14-repository ecosystem. Publishing at [take-ai-bite.com](https://take-ai-bite.com/) and [blog.take-ai-bite.com](https://blog.take-ai-bite.com/)
+- **Data Scientist & AI Product Architect, Take AI Bite** (2025-present): Creator of [Take AI Bite](https://github.com/albertodiazdurana/take-ai-bite) ([take-ai-bite.com](https://take-ai-bite.com/)), a framework for structured human-AI collaboration with 13 principles and a living methodology engine (DSM) governing a 14-repository ecosystem. Publishing at [take-ai-bite.com](https://take-ai-bite.com/) and [blog.take-ai-bite.com](https://blog.take-ai-bite.com/)
 - **Alcemy GmbH** (2024-2025): Deployed 5+ ML models optimizing cement production, cutting CO₂ emissions across 35+ customers
 - **Appian Software** (2021-2024): Led 10+ process mining assessments, reducing process times ~20% on average
 - **TU Berlin** (2019-2021): PhD research in energy access prediction; [CPOTE 2020 publication](https://github.com/albertodiazdurana/Prediction-of-cost-efficient-measures-to-improve-energy-access)
